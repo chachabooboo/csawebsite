@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/advisories/ad-2020-006 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	Protect Your Systems and Data From Ransomware Attacks
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="description" content="Ransomware is malware designed to encrypt files, and is a constantly evolving global threat. Prevention is key to avoid falling victim to ransomware." />
+<meta name="twitter:description" content="Ransomware is malware designed to encrypt files, and is a constantly evolving global threat. Prevention is key to avoid falling victim to ransomware." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/advisory.jpg" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | Protect Your Systems and Data From Ransomware Attacks" />
+<meta property="twitter:title" content="CSA | SingCERT | Protect Your Systems and Data From Ransomware Attacks" />
+<meta property="og:description" content="Ransomware is malware designed to encrypt files, and is a constantly evolving global threat. Prevention is key to avoid falling victim to ransomware." />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/advisories/ad-2020-006" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/advisory.jpg" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | Protect Your Systems and Data From Ransomware Attacks" />
+<meta itemprop="description" content="Ransomware is malware designed to encrypt files, and is a constantly evolving global threat. Prevention is key to avoid falling victim to ransomware." />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/advisory.jpg" />
+</head>
+<!-- body-->
+<body class="singcert singcert_advisories singcert_advisories_ad-2020-006">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/advisories/ad-2020-006" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_yellow" data-wow-delay="0.2s">
+            Protect Your Systems and Data From Ransomware Attacks
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 28 Dec 2020</p>
+            <p>Updated on 28 Dec 2020</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <div>
+<style>
+    p {
+    text-align: justify
+    }
+</style>
+<p><span style="font-style: italic;">Prevention is key to avoid falling victim to ransomware</span></p>
+<p>&nbsp;</p>
+<h3>What is Ransomware?</h3>
+<p>Ransomware is a form of malware designed to encrypt files on a device. Threat actors then demand a ransom, typically in cryptocurrency, from the victim to decrypt the files. Some ransomware variants will also try to spread to other machines on the network.</p>
+<p>Ransomware is a perennial and constantly evolving global threat in the cyber security landscape, as cyber criminals&rsquo; tactics evolve in response to improvements made by businesses. To learn more about recent developments in ransomware, as well as other cyber security issues, please visit our monthly <a href="../publications.html">CyberSense publication</a>.</p>
+<br />
+<p><strong>How does Ransomware Spread?</strong></p>
+<p>Ransomware may spread through phishing emails that contain malicious links or attachments. Clicking on these links typically results in the ransomware being downloaded from an external server. Malicious advertisements may also exploit vulnerabilities in the web browser to serve and install ransomware, commonly known as &ldquo;drive-by downloads&rdquo;. Ransomware may also be distributed through methods such as brute-force attacks, exploitation of insecure Remote Desktop Protocols (RDPs), unpatched Virtual Private Networks (VPNs), and spam campaigns.</p>
+<p>Once a machine has been infected by ransomware, some types of ransomware may propagate across the network by exploiting vulnerabilities in background services. For instance, in 2017, the WannaCry ransomware exploited the Server Message Block (SMB) protocol.</p>
+<br />
+<p><strong>Impact of Ransomware</strong></p>
+<p>Ransomware attacks are disruptive to business operations as employees are unable to access the infected files. It is difficult to recover infected files as each type of ransomware requires a unique decryptor, which may not be available for newer ransomware variants. Sensitive and proprietary information may be lost if the data was not backed-up.</p>
+<p>Ransomware threat actors may also threaten to publish the data online to pressure victims to pay the ransom, such as what was done by the MAZE ransomware group which publicised the medical files of the Hammersmith Medicines Research to pressure them into paying the ransom, even though they were able to restore their systems.</p>
+<p>&nbsp;</p>
+<h2>Preventive Measures</h2>
+<p>Prevention is key to avoid falling victim to ransomware. Organisations need to take appropriate measures to secure their infrastructure and systems. It is also essential to formulate a backup and recovery plan for critical data, and to perform data backups regularly. To avoid falling victim to ransomware attacks, it is recommended that organisations also adopt the following cyber hygiene practices.</p>
+<br />
+<p><strong>1. Secure Your Systems</strong></p>
+<p><span style="text-decoration: underline;">Use Anti-Virus; Update your Systems, Software and Applications Promptly</span><br />
+Threat actors commonly exploit unpatched vulnerabilities to gain unauthorised access into systems and networks to carry out other malicious activities, such as ransomware attacks. Organisations should:
+</p>
+<ul>
+    <li>Install anti-virus/anti-malware software and keep the software (and its definition files) updated. Perform a scan of your systems and networks at least once a week and scan all received files. Removable storage devices should be scanned upon connection.</li>
+    <li>Update systems, applications and software to the latest version and download the latest security patches.</li>
+</ul>
+<p>&nbsp;</p>
+<span style="text-decoration: underline;">Enable Microsoft Office macros only when required</span><br />
+One possible delivery mechanism of ransomware comes in the form of malicious Microsoft Office documents that trick victims into enabling macros in order to view its contents. Organisations should allow macros to be enabled only when required.
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<span style="text-decoration: underline;">Review Settings on Exposed Services and Open Ports</span><br />
+Some ransomware variants may take advantage of exposed services and open ports such as the RDP port 3389 and SMB port 445 to spread across the network. Organisations should review if there is a need to leave these ports exposed and restrict connections to only trusted hosts.
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<span style="text-decoration: underline;">Implement Application Control</span><br />
+Consider installing application control software that provides application and/or directory whitelisting. Whitelisting allows only approved programs to run, and can prevent unknown programs, such as malware, from running.
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<span style="text-decoration: underline;">Limit Privileged Access to Authorised Personnel</span><br />
+User accounts with administrative privileges have the rights to execute a wide range of actions on the system, including installing software or accessing sensitive data.
+<p>&nbsp;</p>
+<p>To reduce the chances of a threat actor gaining administrative privileges, organisations should:
+</p>
+<ul>
+    <li>Control and limit privileged access to only authorised individuals who require full access to carry out their work.</li>
+    <li>Give users, other than the administrator, the lowest user privileges necessary for work.</li>
+    <li>Review and manage the use of all user accounts and disable inactive accounts when they are no longer in use.</li>
+    <li>Implement multi-factor authentication for such administrative privileges.</li>
+</ul>
+<p>&nbsp;</p>
+<span style="text-decoration: underline;">Raise Awareness</span><br />
+Awareness is key to preventing ransomware attacks. Organisations should conduct regular training for employees to raise their awareness and learn good cyber hygiene practices, such as identifying suspicious emails and not clicking on links or opening attachments found in emails from unknown or untrusted sources.
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<span style="text-decoration: underline;">Monitor for Suspicious Activities</span><br />
+Be vigilant in monitoring for suspicious scanning activities and unauthorised login attempts. This will go a long way to prevent your organisation from falling victim to a ransomware attack.
+<p>&nbsp;</p>
+<br />
+<p><strong>2. Protect your Data</strong></p>
+<p>&nbsp;</p>
+<span style="text-decoration: underline;">Encrypt Important or Sensitive Data</span><br />
+Organisations should encrypt important or sensitive data as this makes it more difficult for threat actors to access the data if it is stolen. Encryption may also prevent some ransomware variants from detecting the files, if they work by looking for commonly used file types such as images and documents.
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<span style="text-decoration: underline;">Maintain an Updated Backup, and Keep it Offline </span><br />
+Performing regular data backups facilitates data restoration in the event of a ransomware attack. It is important that the backup data is stored offline and not connected to your network, as certain ransomware variants can propagate across the network.
+<p>&nbsp;</p>
+<br />
+<p><strong>3. Prepare an Incident Response Plan</strong></p>
+<p>It is important to develop an incident response plan and conduct exercises to test the plan, before an incident happens. In the unlikely event that the organisation is affected by an attack, having a plan in place and exercising it will help the staff know what actions to take, and prioritise system recovery.</p>
+<p>&nbsp;</p>
+<h3>Response and Recovery for Ransomware Victims</h3>
+<p>If your organisation has been infected with ransomware, these steps may help in response and recovery:
+</p>
+<ol>
+    <li>Disconnect the infected computer immediately from your network. Doing so isolates the infected system and prevents the ransomware from spreading to other computers.</li>
+    <li>Scan and disinfect the computer with an updated anti-virus or anti-malware application.</li>
+    <li>Go to <a rel="noopener noreferrer" href="https://www.nomoreransom.org/" target="_blank">https://www.nomoreransom.org/</a> to check if there is a decryptor available for it.</li>
+    <li>Perform data restoration from the backup sources. Most types of ransomware create some form of persistence in the infected computer, and may re-encrypt data if not properly removed. As such, be sure to perform data restoration on a clean installation that is completely free of the malware.</li>
+</ol>
+<br />
+<p><strong>Should you pay the ransom?</strong></p>
+<p>SingCERT does not recommend paying the ransom. Doing so does not guarantee that the data will be decrypted or that your data will not be published by threat actors. It also encourages the threat actors to continue their criminal activities and target more victims. Threat actors may also see your organisation as a soft target and may strike again in the future.</p>
+<p>&nbsp;</p>
+<p><strong>References</strong><br />
+<a rel="noopener noreferrer" href="https://www.nomoreransom.org/" target="_blank">https://www.nomoreransom.org/</a><br />
+<a rel="noopener noreferrer" href="https://www.cisa.gov/ransomware" target="_blank">https://www.cisa.gov/ransomware</a><br />
+<a rel="noopener noreferrer" href="https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks" target="_blank">https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks</a><br />
+<a rel="noopener noreferrer" href="../publications/global-local-ransomware-trends-2020-q1-q3.html" target="_blank">https://www.csa.gov.sg/singcert/publications/global-local-ransomware-trends-2020-q1-q3</a></p>
+</div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 28 Dec 2020
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/advisories/ad-2020-006 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:28 GMT -->
+</html>

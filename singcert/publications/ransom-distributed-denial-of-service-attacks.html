@@ -1,0 +1,451 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/publications/ransom-distributed-denial-of-service-attacks by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	Ransom Distributed Denial-Of-Service Attacks
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="description" content="Ransom Distributed Denial-of-Service (RDDoS) attacks are extortion-based Distributed Denial of Service (DDoS) attacks that are motivated by financial gain." />
+<meta name="twitter:description" content="Ransom Distributed Denial-of-Service (RDDoS) attacks are extortion-based Distributed Denial of Service (DDoS) attacks that are motivated by financial gain." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | Ransom Distributed Denial-Of-Service Attacks" />
+<meta property="twitter:title" content="CSA | SingCERT | Ransom Distributed Denial-Of-Service Attacks" />
+<meta property="og:description" content="Ransom Distributed Denial-of-Service (RDDoS) attacks are extortion-based Distributed Denial of Service (DDoS) attacks that are motivated by financial gain." />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/publications/ransom-distributed-denial-of-service-attacks" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | Ransom Distributed Denial-Of-Service Attacks" />
+<meta itemprop="description" content="Ransom Distributed Denial-of-Service (RDDoS) attacks are extortion-based Distributed Denial of Service (DDoS) attacks that are motivated by financial gain." />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"364083",ustr:"",originlat:"0",clientrtt:"13",ghostip:"96.17.72.116",ipv6:false,pct:"10",clientip:"27.54.50.35",requestid:"389d722",region:"11483",protocol:"",blver:14,akM:"dscb",akN:"ae",akTT:"O",akTX:"1",akTI:"389d722",ai:"227771",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+<!-- body-->
+<body class="singcert singcert_publications singcert_publications_ransom-distributed-denial-of-service-attacks">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/publications/ransom-distributed-denial-of-service-attacks" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_blue" data-wow-delay="0.2s">
+            Ransom Distributed Denial-Of-Service Attacks
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 02 Oct 2020</p>
+            <p>Updated on 02 Oct 2020</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <em>CyberSense is a monthly bulletin by CSA that spotlights salient cybersecurity topics, trends and technologies, based on curated articles and commentaries. CSA provides periodic updates to these bulletins when there are new developments.</em><br />
+<br />
+<p><strong>OVERVIEW</strong></p>
+<p>Ransom Distributed Denial-of-Service (RDDoS) attacks are extortion-based DDoS attacks* that are motivated by financial gain:</p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li>Cybercriminals typically send a ransom note threatening to launch DDoS attacks, unless a ransom is paid by the given deadline.</li>
+    <li>On occasion, to validate and give credibility to their threat, demonstrative DDoS attacks are launched by the threat actors against the victim before or after sending the ransom note.</li>
+</ul>
+<p>This edition of CyberSense takes a closer look at the evolution of RDDoS attacks, and major RDDoS incidents that have occurred recently. </p>
+<p><em>* In a Distributed Denial-of-Service attack, an attacker takes unauthorised control of multiple computers, which may be harnessed as a botnet to launch a DoS attack.</em></p>
+<p><em>&nbsp;</em></p>
+<p><strong><span>A BRIEF HISTORY OF RDDoS ATTACKS</span></strong></p>
+<p>RDDoS attacks have existed since the late 1990s. <sup>[1,2,3]</sup> During this period, organisations were chiefly concerned about how RDDoS attacks on their websites translated to lost business opportunities, as customers would be driven to competitors&rsquo; websites instead. While such attacks were common, their impact against businesses was relatively minor &ndash; given that most of these still functioned offline at that time. However, there were online bookmakers in the UK which reportedly suffered huge losses in revenue after they were brought down by RDDoS attacks. <sup>[4]</sup></p>
+<p>The complexion of RDDoS attacks changed dramatically in mid-2014, when a cybercriminal group DD4BC (or &ldquo;DDoS for Bitcoin&rdquo;), showing a high level of technical competence and cryptocurrency know-how, started to carry out RDDoS attacks on a prolific scale. Initially targeting organisations in the online gambling industry and Bitcoin exchanges, DD4BC&rsquo;s cyber operations expanded to include companies in the financial, entertainment, and energy sectors, including several high-profile corporations.<sup> [5]</sup> DD4BC&rsquo;s modus operandi typically involved launching small-scale DDoS attacks against their victims&rsquo; websites for up to an hour, and then sending ransom notes threatening longer and more powerful attacks unless Bitcoin ransoms, ranging between the equivalent of about US$200 and US$25,000, were paid within a day. Follow-up ransom notes with threats of another larger DDoS attack and higher ransom demands were subsequently sent to victims who didn&rsquo;t respond to payment and were perceived to be taking defensive measures. These were also accompanied by waves of small-scale DDoS attacks that sometimes lasted several days. If the DDoS attacks had been thwarted successfully by victims, DD4BC would give up and move on to new targets.</p>
+<p><span>&nbsp;</span></p>
+<p style="text-align: center;"><img alt="An example of a ransom note sent by DD4BC to a victim" src="../-/media/singcert/cybersense/Ransom%20Distributed%20Denial-Of-Service%20Attacks%201981e.jpg?h=494&amp;w=auto&amp;hash=F759F4C18880E0FA84EC88B6AF1C1CCB" style="height: 494px; width: auto;" /></p>
+<p style="text-align: center;"><em><span style="text-decoration: underline;">Figure 1</span></em><em><span>: </span>An example of a ransom note sent by DD4BC to a victim</em></p>
+<p><span>&nbsp;</span></p>
+<p>From late 2015, DD4BC further threatened to expose the identities of victims who didn&rsquo;t pay ransoms on social media in order to damage their reputations. <sup>[6]</sup> This shift in DD4BC&rsquo;s tactics helped to enhance DD4BC&rsquo;s credibility in carrying out its threats and disrupting its victim&rsquo;s business operations. By the time two DD4BC members were arrested in January 2016 by several European law enforcement agencies including Europol, more than 140 companies and organisations had been attacked by DD4BC, <sup>[7]</sup> with some of the DDoS attacks measuring up to 50 gigabits per second (Gbps) at peak volume.</p>
+<p><strong><em><span></span></em></strong><strong><span>SUCCESS BREEDS CONTEMPT AND COPYCATS</span></strong></p>
+<p>Although there were no confirmed cases of companies yielding to DD4BC&rsquo;s demands, research conducted by various cybersecurity vendors on Bitcoin&rsquo;s public ledger suggested that many victims did pay ransoms. These were likely steady enough to make DD4BC&rsquo;s operations sustainable and profitable, while DDoS-for-hire botnets could also have been leased cheaply from the Dark Web, thus providing DD4BC an attractive return on their investments. <sup>[8]</sup> DD4BC&rsquo;s business model and the low barriers to entry for threat actors to carry out DDoS attacks have subsequently spawned copycat groups that employed DD4BC&rsquo;s tactics for their RDDoS operations over the years to come. Some of these also impersonated infamous hacking groups in their RDDoS campaigns. This is most likely to bank on the notoriety of such hacking groups to scare victims into making payment and lend credibility to their threats, and at the same time to cover their tracks and throw law enforcement agencies off their scent.</p>
+<p>Between September and December 2015, the &ldquo;Armada Collective&rdquo; cybercriminal group claimed to have launched a RDDoS campaign against secure webmail services such ProtonMail and Hushmail, as well as several Swiss organisations and financial institutions in Greece, Sweden and Thailand. The group threatened to continue their operations against the victims if their Bitcoin ransom demands were not met. The online banking services of three Greek banks were reportedly disrupted for several hours on various occasions within a week after the DDoS attacks. <sup>[9,10]</sup> ProtonMail continued to suffer from DDoS attacks, even though the company had already paid their ransom.</p>
+<p>RDDoS campaigns hit new heights in 2017, as cybercriminals took advantage of powerful botnets &ndash; comprising infected Internet-of-Things (IoT) devices &ndash; to launch large DDoS attacks and pressure their victims into paying ransoms. <sup>[11]</sup> The campaigns gradually subsided towards the end of the year, as victims began to notice that most of the perpetrators did not follow through with their threats (either due to a lack of resources or that they were simply bluffing). Notably, between mid- and late- September 2017, there were scammers who rode on the waves of these global RDDoS campaigns to launch massive e-mail scams. These involved sending ransom e-mails purportedly from the Phantom Squad hacking group to companies across many industries, with threats to launch DDoS attacks on 30 September against their victims, unless a Bitcoin ransom equivalent to about US$800 was paid. <sup>[12]</sup></p>
+<p>Most recently beginning early August 2020, a cybercriminal gang has been observed launching an ongoing sophisticated RDDoS campaign targeting thousands of global organisations across various sectors, including banking and finance, hospitality and e-commerce. According to the alert that was issued by the FBI in late August, threat actors behind the campaign allegedly posed as hacking groups including Fancy Bear, Cozy Bear, Lazarus Group, and the Armada Collective in their ransom notes e-mailed to targeted organisations, and threatened to launch crippling DDoS attacks and increase their Bitcoin ransom demands within six days if the ransom deadline was missed. The group&rsquo;s demonstrative DDoS attacks varied in peak volumes and attack length. Although most targeted victims managed to mitigate the attacks or did not report further activity after the ransom deadline was up, there were several others who suffered from consecutive DDoS attacks which affected their business operations. A high-profile victim in this campaign was the New Zealand Stock Exchange (NZX), which suffered trading halts for several days in late August &ndash; its hosting provider, Spark, was repeatedly targeted by the threat actors, and this led to network outages for Spark&rsquo;s other customers as well. <sup>[13]</sup> </p>
+<p><span>&nbsp;</span></p>
+<p style="text-align: center;"><span><img alt="Snippets of ransom notes sent to two different victims by the same cybercriminal gang, impersonating as the Armada Collective and Fancy Bear, which carried out RDDoS attacks beginning August 2020" src="../-/media/singcert/cybersense/Ransom%20Distributed%20Denial-Of-Service%20Attacks%202f1e0.jpg?h=192&amp;w=auto&amp;hash=D09D2EED3139946251217DE5079E60D9" style="height: 192px; width: auto;" />&nbsp;</span></p>
+<p style="text-align: center;"><em><span style="text-decoration: underline;">Figure 2</span></em><em><span>: </span>Snippets of ransom notes sent to two different victims by the same cybercriminal gang, impersonating as the Armada Collective and Fancy Bear, which carried out RDDoS attacks beginning August 2020</em></p>
+<p><span>&nbsp;</span></p>
+<p>Unlike other threat actors that typically target the public websites of their victims, cybersecurity vendor Akamai has reported how the victims&rsquo; backend infrastructure, application programming interface (API) endpoints, and domain name system (DNS) servers were repeatedly and specifically targeted in this RDDoS campaign to prolong outages, and how the threat actors often changed the protocols abused for the DDoS attacks to obfuscate their next attack moves. These suggest a high level of sophistication of the threat actors who have also been observed launching complex DDoS attacks, some of which peaked at close to 200 Gbps.</p>
+<p>&nbsp;</p>
+<p><strong><span>RANSOM DDoS ATTACKS ARE FIRMLY ESTABLISHED, AND HERE TO STAY</span></strong></p>
+<p>The recent rise of RDDoS global campaigns targeting organisations across multiple sectors is a concern. This is supported by observations of more than a 150% increase in the number of DDoS attacks in the first half of 2020, as compared to the same period in 2019<sup>[14]</sup>. The US Cybersecurity and Infrastructure Security Agency (CISA) has also warned that DDoS-related attacks will likely increase in frequency against organisations across multiple sectors globally.<sup> </sup></p>
+<p>Affected organisations could potentially suffer immeasurable losses in both revenue and reputation, as a result of system and network downtime owing to DDoS attacks. Thus said, all organisations should take necessary measures to secure, protect and defend their Internet-facing services from DDoS attacks. This would include engaging cybersecurity vendors that provide DDoS protection services to identify and block DDoS attacks before they affect the services or infrastructure, maintaining offline backup of critical data to ensure business continuity and developing incident response plans to deal with DDoS attacks.<sup> [15]</sup></p>
+<p>&nbsp;</p>
+<p><strong>REFERENCES</strong></p>
+<p><span>[1] The first DDoS attack was 20 years ago. This is what we&rsquo;ve learned since.<br />
+</span><a rel="noopener noreferrer" href="https://www.technologyreview.com/2019/04/18/103186/the-first-ddos-attack-was-20-years-ago-this-is-what-weve-learned-since/" target="_blank">https://www.technologyreview.com/2019/04/18/103186/the-first-ddos-attack-was-20-years-ago-this-is-what-weve-learned-since/</a></p>
+<p>[2] Pay Us the Money or the Website Gets It: Extortion by DDoS<br />
+<a rel="noopener noreferrer" href="https://securityintelligence.com/pay-us-the-money-or-the-website-gets-it-extortion-by-ddos/" target="_blank">https://securityintelligence.com/pay-us-the-money-or-the-website-gets-it-extortion-by-ddos/</a></p>
+<p><span>[3] Extortion via DDoS on the rise<br />
+</span><a rel="noopener noreferrer" href="https://www.computerworld.com/article/2556543/extortion-via-ddos-on-the-rise.html" target="_blank">https://www.computerworld.com/article/2556543/extortion-via-ddos-on-the-rise.html</a></p>
+<p><span>[4] DDoS protection racket targets online bookies<br />
+</span><a rel="noopener noreferrer" href="https://www.theregister.com/2001/11/26/ddos_protection_racket_targets_online/" target="_blank">https://www.theregister.com/2001/11/26/ddos_protection_racket_targets_online/</a></p>
+<p><span>[5] DD4BC, Armada Collective, and the Rise of Cyber Extortion<br />
+</span><a rel="noopener noreferrer" href="https://www.recordedfuture.com/dd4bc-cyber-extortion/" target="_blank">https://www.recordedfuture.com/dd4bc-cyber-extortion/</a></p>
+<p><span>[6] Case Study: Summary of Operation DD4BC<br />
+</span><a rel="noopener noreferrer" href="https://www.akamai.com/us/en/multimedia/documents/state-of-the-internet/dd4bc-operation-profile-bitcoin-extortion-ransom-case-study.pdf" target="_blank">https://www.akamai.com/us/en/multimedia/documents/state-of-the-internet/dd4bc-operation-profile-bitcoin-extortion-ransom-case-study.pdf</a></p>
+<p>[7] DD4BC, Armada Collective, and the Rise of Cyber Extortion<br />
+<a rel="noopener noreferrer" href="https://www.recordedfuture.com/dd4bc-cyber-extortion/" target="_blank">https://www.recordedfuture.com/dd4bc-cyber-extortion/</a></p>
+<p><span>[8] DD4BC arrests unlikely to signal end to DDoS extortion<br />
+</span><a rel="noopener noreferrer" href="https://www.csoonline.com/article/3023023/dd4bc-arrests-unlikely-to-signal-end-to-ddos-extortion.html" target="_blank">https://www.csoonline.com/article/3023023/dd4bc-arrests-unlikely-to-signal-end-to-ddos-extortion.html</a></p>
+<p>[9] Armada Collective: Who are the hackers extorting bitcoin ransoms and what can we do?<br />
+<a rel="noopener noreferrer" href="https://www.ibtimes.co.uk/armada-collective-who-are-hackers-extorting-bitcoin-ransoms-what-can-we-do-1528253" target="_blank">https://www.ibtimes.co.uk/armada-collective-who-are-hackers-extorting-bitcoin-ransoms-what-can-we-do-1528253</a></p>
+<p>[10] Armada Collective launches DDoS attacks against Greek banks<br />
+<a rel="noopener noreferrer" href="https://www.welivesecurity.com/2015/12/01/armada-collective-launches-ddos-attacks-greek-banks/" target="_blank">https://www.welivesecurity.com/2015/12/01/armada-collective-launches-ddos-attacks-greek-banks/</a></p>
+<p>[11] A DDoS gang is extorting businesses posing as Russian government hackers<br />
+<a rel="noopener noreferrer" href="https://www.zdnet.com/article/a-ddos-gang-is-extorting-businesses-posing-as-russian-government-hackers/" target="_blank">https://www.zdnet.com/article/a-ddos-gang-is-extorting-businesses-posing-as-russian-government-hackers/</a></p>
+<p>[12] Phantom Squad &ndash; To Believe Or Not To Believe<br />
+<a rel="noopener noreferrer" href="https://security.radware.com/ddos-threats-attacks/threat-advisories-attack-reports/phantom-squad/" target="_blank">https://security.radware.com/ddos-threats-attacks/threat-advisories-attack-reports/phantom-squad/</a></p>
+<p>[13] DDoS extortionists target NZX, Moneygram, Braintree, and other financial services<br />
+<a rel="noopener noreferrer" href="https://www.zdnet.com/article/ddos-extortionists-target-nzx-moneygram-braintree-and-other-financial-services/" target="_blank">https://www.zdnet.com/article/ddos-extortionists-target-nzx-moneygram-braintree-and-other-financial-services/</a></p>
+<p>[14] Cyber Threats &amp; Trends Report: First Half 2020<br />
+<a rel="noopener noreferrer" href="https://www.home.neustar/resources/whitepapers/cyber-threats-and-trends-report-2020-first-half" target="_blank">https://www.home.neustar/resources/whitepapers/cyber-threats-and-trends-report-2020-first-half</a></p>
+<p>[15] Global Ransom DDoS Campaign<br />
+<a rel="noopener noreferrer" href="../alerts/al-2020-033.html" target="_blank">https://www.csa.gov.sg/singcert/alerts/al-2020-033</a></p>
+<p>&nbsp;</p>
+<br />
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 02 Oct 2020
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/publications/ransom-distributed-denial-of-service-attacks by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:33 GMT -->
+</html>

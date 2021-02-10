@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/publications/mobile-insecurity by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	Mobile Insecurity
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="description" content="Mobile mania hit Singapore again in September 2019 with the launch of some freshly dropped Apples, in the form of the iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max. Owning the latest hardware is, of course, only half the story: what each of these handheld supercomputers offers is the ability to load all kinds of apps - providing entertainment, connectivity with family and friends, and also serve as a productivity tool for work.  However, we are often unaware of the risks inherent in such devices and apps. This can be from simply clicking “Yes” when asked if you would allow an app to access your device’s phonebook or hardware. The previous issue of Cybersense focused on the problem of mobile malware; building on this, we now look at some security risks that mobile phones and apps themselves present." />
+<meta name="twitter:description" content="Mobile mania hit Singapore again in September 2019 with the launch of some freshly dropped Apples, in the form of the iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max. Owning the latest hardware is, of course, only half the story: what each of these handheld supercomputers offers is the ability to load all kinds of apps - providing entertainment, connectivity with family and friends, and also serve as a productivity tool for work.  However, we are often unaware of the risks inherent in such devices and apps. This can be from simply clicking “Yes” when asked if you would allow an app to access your device’s phonebook or hardware. The previous issue of Cybersense focused on the problem of mobile malware; building on this, we now look at some security risks that mobile phones and apps themselves present." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | Mobile Insecurity" />
+<meta property="twitter:title" content="CSA | SingCERT | Mobile Insecurity" />
+<meta property="og:description" content="Mobile mania hit Singapore again in September 2019 with the launch of some freshly dropped Apples, in the form of the iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max. Owning the latest hardware is, of course, only half the story: what each of these handheld supercomputers offers is the ability to load all kinds of apps - providing entertainment, connectivity with family and friends, and also serve as a productivity tool for work.  However, we are often unaware of the risks inherent in such devices and apps. This can be from simply clicking “Yes” when asked if you would allow an app to access your device’s phonebook or hardware. The previous issue of Cybersense focused on the problem of mobile malware; building on this, we now look at some security risks that mobile phones and apps themselves present." />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/publications/mobile-insecurity" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | Mobile Insecurity" />
+<meta itemprop="description" content="Mobile mania hit Singapore again in September 2019 with the launch of some freshly dropped Apples, in the form of the iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max. Owning the latest hardware is, of course, only half the story: what each of these handheld supercomputers offers is the ability to load all kinds of apps - providing entertainment, connectivity with family and friends, and also serve as a productivity tool for work.  However, we are often unaware of the risks inherent in such devices and apps. This can be from simply clicking “Yes” when asked if you would allow an app to access your device’s phonebook or hardware. The previous issue of Cybersense focused on the problem of mobile malware; building on this, we now look at some security risks that mobile phones and apps themselves present." />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"364083",ustr:"",originlat:"0",clientrtt:"7",ghostip:"96.17.72.116",ipv6:false,pct:"10",clientip:"27.54.50.35",requestid:"38a0080",region:"11483",protocol:"",blver:14,akM:"dscb",akN:"ae",akTT:"O",akTX:"1",akTI:"38a0080",ai:"227771",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+<!-- body-->
+<body class="singcert singcert_publications singcert_publications_mobile-insecurity">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/publications/mobile-insecurity" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="1HNKch3wwwBEmtSwIg7vxIesLgQSrX1srtdz6xB6wVus9QAzaIFlCQC+PxsIrk6fWP0Mvrh128Tkq1+Ti2MX2yE8WWD29zriy9etlx9Px/SGiyEdKgZzKRa7ZU6st56jcEmtpFoPauRUe0nwtpJvRo9H3IT0UQPL6OyR6jPwZ0CV8gsO6qBSL+JHOkoKpr8M/bo5mEZyfxwbrMwCS/E55LS1B8zE4vUnE5DgXgMOdvwdkLZzuxbOi7dGX3sMeaZojTcEzgWN92pPH+zA2qNO9MH+4mV5L+d8JinEPY52aaZkmc02gwgXGGIA4tmX242xxPJYEMQ0ePPQD07Dkfd1mOro6zROdStDO+Zt86hr3NZOxCQ7a/cYG2Ynd0InXL0jp0IHsxpB8enMkZ6kGjyllCVpITuqRDOGL4AISv9rvlwpdwcTBqWO5JOIVlBepPyr71XGvvxiiaYFu2lJI/xZOlgHNXqUm63e62vd03g5Ok7ot/UKmVjD408M8MVkwvPZmMhH7NdvvhATDBJib3xMcryk8RZyvgHvI/qiNQUPTXjDVLI8rtic3peth1sSkhCRyzUOjlL1HWgeo+9OAs9MpZMSb82wLehydHF3xmZRnKtj57gpdRYcuQfY7SsR5YepqWXw8MGNxuylThw0pA/osltrARLs+dnks7TmCwMQgWXZURHNZs892Ix/yEYiS/Zensj3+Thx8m0N7vD4NkRsXpUJL3Ms/dsvCJi2PAfQeGcXcFqFhPjfGMl8L5xZt2rerFPrc3pVQ3amMVmzyNt6VvNo79jGgCt15q/tAajl/PNZCdNy+16q+hwabSLt2HLjwFTzb8qxWuG1vEgj5yKN9Ges5g9vYcb2qVdjxpXGh66bq11k6YvO7H92s7BQpqSO3azgcJ+PHWHOsi9hpxgFlDUZ2C2DYjuXc2cHjxChu7G68y5M79rYlsWzQyjSD3OtIDqHYPzMJr6LHGY03AyYeS0pKV5QTwmln5hWCllXY9rTLSx/g2fUcw96/XM9oClFF+f5FE7V1AofubswjTQJ9zn/F4cIK/+WxaT2pIWuIzD8cqgX720GtZ4kEYeHHvLreIu7tLB6SUPQyWMPLfZNuLQA6FPRVBFyCSzgcYCSDD5Hhd3HFjTTDAaAB6ZFFoup5lXtgPdOa4iOpIG0VPM98JhJ7titA3PB7fM/d5ZpIKeTP/AWTqmYk/WfcBQnoLcPYKUNXsFWo+ApKVrHt7eEWpvxiE+6BfWaXRS6qUHr1ptA0zq/w42ZKL8262G0KDSwstppdL3PwBZ6sNauVOhClViaUEHj6DO0QkLuEaOqbrCAtyD9Zvm22p9Y74hyYluLmR53lp2ezeyY5Kckd3eM720q552/EXyrO7ZZ4iaTeC59VL0AEP2MRNC2eFXX1cNAnDz9Yrzfl2l9sXPO0gwG+RA0SukLcAAJ+dzczOyKIv50l4GlDtwjxgvnmHNlECBiK+EeZlWdTMMH8LXE8QLpULwOuD5roKH8AJOvD+nkpC1HIKAZfl/EsLv5urtc7po7uJHuv0eElLI5svOht6cEtXIRaf5WXQURgo99ZWn5kqsOFfjV1zfJiL6ju6u9jj7nv0S6WBjI76voObxqNgP52MHVbXgo2US3ZDjHB6slVFJV+gJDK8IrgCDwkZBneapxMhtOY7fbwquxGcUFp9HJu8VjThXWzcmwFTrpT+leo6Fje3vWuPsPI6T5wgs+ASXPIqotKMwQoUXem38EryhKaYdwUoC3VgjUB6yg8kbRQaFZq/RPGd6Zga1oIpzJT13eogPNNigVaQaSyIswRUKjOq3QX6nL1Fu1AYQriD7Pa6pBzqh737NIgHQ3HXG4GSrJ2YexheVWdYx1bPCUbh1s0b6+9oFmDup0Nf6pRlWj2rK807TkvQ4ehVhxAlI/C4+GPaSZq8yJv66nhGOO5Egf8tHe6kchYk+WfcOw9bFElKMQAXYk5Wwq0CSVw6tiyNInOQ7NohkDzcYIFvmVVrsu8ekJ5as4hGIEVG948jz3rb5oTHYzxX0nc25iPT8LGpwlsOf46SSZQ2hsEWUFzLHlKzYDd3ZsOBG8A4g8+Rlzk9VHRJ6+ckrmTlX2YWtD55YibUGpbdJDAsZz3K7JBU+VFEa7Mdobq6Z3IUyTp0vT5dAN2Iof/JN8fgknL9kLBXkT2lky/0T9rywgv+gVJ5w88ucch2BfuJivnhT9umCn0L92D4TZ9S2xYGhjBEHIXfcrN1Hoz3oXpX/EIaQKTWbWajrTyUF2H3QceLdBP9ycpz3g7mz9r5nRxqP8MNmb/VUUY/Hcf+SoLUBpRqac5MI+1O+kejbYWS9K0gS3gN59XFra55XqQ8WkYA9jM5wzVSLOMccNME2oNrb/P8YDBctwf/FMLvNlSwvFpYG4cajdkTxja2HXZNGjEcb95bZLHQU0Pbnp+mX3UUBhr7mPXJp1WpaXHnJm9dUfk54kc/p2g2eO7pqyP90etXQcM7OrYVVWl/JWkvc/qb9xOAr+u1okmyCKMbuVcwHSBUcoaW0xE8OnjZOokPFsP1KOpryKopsa5mNfPojFqlCLDZaLISrwA4OjQh8xXYMpBsgRu/UkgiuIAkOEcEivFqm9yDD3EamBpiWEXqE7vFQ4rJWTJnRWdHW7U7KBG+1PyKHwrdpxSl/jnstX++9OPe0l7KqyKGnoVILcbe5KcqqXQ9NJr5jn0bE5Zk8/+AhOzYsbgkmIICYR7LdTLt/kO06Wfq2Yn6fhLxvxXEUiKuE2R5sFlTMWUgtprZ5URbaHilHMUs6Juk2mR8qa/YKURXw+RevkltiIvgIFlXVttCmTzCoou7ywBG+eyUS1qhagnGPw5WuBIFW/EJRREY54g8iY7I9AzXh05xieo4102SKHayP+bKGOl6dfpioX6KIUE3OMcZ5oj7qLnI3hAAUBBwCYqnJ/8X4R/SL62mDBs8qeQUNyIdS7CFEapaMeFXIAu0JG5L+N5rTbFOwO/1t3rloXhXh1NIlYFyOiBgJ2Rtj9S9gzjtQ64Wb44GSg2W28evYBnJ2OR2uKTiQVD09j79DOYGWV3tsfkmTeBe3Nm1GXR/TIq3OO/1n2DarheXjj2ZbMCAYsSIEIGtm8x8cNBUEJOBaK8BqwsA8q2tWsJjEBJohn++bNPCgRe7WsxowFjIGgv58/eZCaPFQ88FdiYrVAccTZdWJdhmYjRLN8gPn8iRqwek28eoqQcyvubA8hkUlsFw50XVZSRwPdgSaOgnv+Slq5z3szGCyrrKOYQK4pEeGclgg9VNMtua/YYpdgBjtDDxkLPPGeliBcr7DkJwJCFQKQfKtYKMEqxMh6OHssKGTLgFE8tt9FPPG9W2WNXtmAxyI7kg7zoKpjJy8j7X16EqFWZ2BraCjFjQzJLcmLDyF1dNny2Ure1EDxy33wZSAmhTkMYQ07pYnVR1HGXjnm9fPoxNgiBSFyS6pZ3LwUfCMZQHw0KoOXt3ZVwtgE+6nEkhTY4hKyE11MYxByfvyqh22qiFCc3aOEs1I17aj6htt0ompTjGCziuKPfjmku26xsmbt6JHga7ttNtjArn/IjYOgMwjcguRefYQ4ltadnBdHbYRBKT/9y0anExvFQ7XxApvg+lApOdWkh2QRgaoZJYzHNxC/2PljiYClvbPST3XkMzLtD82LHF0JEyQeAebRn2RDSLiypJL0tBs2+L8PIHYBGxM91YhLMRcomnbuFVo+VcyB023A7iuMz6Zjh/LYU65jhQQwgJjCn/PjXyZsQq9SLrFh2ubggiItMs71ju1yMp9cn1d3AaSxT/7ch7F2uZUwAIVE2NjpJqfW8BvvSDiDc0AXOD8eDkrnvHEOE0rjYOt585eAsvTLA7NHTYrSXpse25IElRaTX9pvt543RKSP6TWY7Eq+1bXgTSatTMC4aeGqJP52ENCW5lCSES62u+oZrCiBiWzH8d3z8bYZ759nhpiR0nLAn8fL9YZcGPh2RQIe1NeQMt1syjREfKc9E4XDGgQQZnYlwlj6Wz53LonpKHpKEhOuz6PDwJ07zxmy3t92O0tbdVKkgsDxoH2N3zY9fgYkJB9MPbNuS1kKsS1MitW9ma6LGhqOc9jZco8QsRaBuAmu5QVa3O46NPu5IYTY6uYNlT1w/orYtxh1tuWE+5Qjol8NSUAcZKSGhHfBSqvBgAnk/27j16Rrq7UQhpoEbrTQT4L81qV/q8oRXTIqFdzAvWxiLCNWMIVcwm5BYD17mMMzMIiaZca4AfC8j1g80a9fo9XqoE/Sz2BCzUGZ7N00Ovu7B+TcfRDUshNT+GDeqF1pWKVtCR5m0MHJCjd54GI2wD+2VyYgwSwtdI2oyEW/lgcPqsJLx5M9/3c4JErychaDnoRKkx7D4BjCom+0wbV1RVDruEb2q+UZmwdYaFCfDi096MFqNLfFS62yC6mN8F+c9RD7KpyXQlmu5EGcjO9IzqeQuP4iwH7jf8NHCMnj/IDlSmgMb/zx84W+3ULUWJwX5BeaRk7wRsVRH8oL84asDZXgl2zUezVe8vR3HKdAUsPS9vSmM1ZqsxoXm0l76jazb6HC8zdwf6EHgza/yiC+CfMtTv4ih3lAqwYOFnqISKk9VIMiGQl3n830jP+2yVorLfiGLZ9B7nRIGsyF2PStY75B07n85C9CJ+869JkAq0u3s8fQ2Wip0+GPB69lAxqrdlOh8w9ZzMrhmTfd4pD/xhIqIs8fB+F3wkRClA2sG747TEMJLDeL1XExOyV+bJy0mLP32CZnYmyP7u4dAMk4B7G+NqyMTFWLeL+8edRow/Al9kkBZX5aBizzXAu25AyvioeY5y2Nc7vbfTiRn6F9+AfrvjJg5dOx3eIpH8D2NNSaFWlLNYmKglWCaEi24nyTjCBOimZVPSaTX8AkafrmUGdhJB/M5OzOH261Hkvyht5Ins+O0UMHD7msduoNeGOM8VxZr9QfdlrZcb0yeGJJiLwhbncqFNywMlRD6qe2GZceTn3PvVzn9o0JnjTioeWDfUoCRLFM/5CoRaQspCe8doJ/IapqQ9o4yEQ5FAEOrfKlm+Tt+ar5Vtqe3ZsL5g8sKbRJUxY9rhQyhB4tnvmeJWGwh0Ayc1f4+j6f/45pMJ8uFsaEQlDd2tBhMTgF9rJAIOGZKEws19HdDYOb9krYu6jmanx0tVCy32GyulV02wsyAjbA1jYgGsMyBrplciRutztuz7DVExJ8L6YyywMwL5vue0Y6x42l4OswDuMBgD2trudKMccnXhz40ZeHb8Lb0bHlnglxFK9A1kEFqlAMYCkLcFRvTKpr9qiMY22VM2evFjiVzw/0635e5+0Y8eTl42VP1Azu/fGTCmTDZAY0CJO65Yhd+VyXz0qL/LAjWZ6NSkRW4+vwpI16XFD7+P/dF0K3xLWisgHKhoWHXDtJV1DDMdtw2YR3bvYTFSq/x9CWpnJBwvqjjjhB2UEsXK2Bjmos8tATIp3KUb/yHbf8eUIRoAo8NoTAcFTPJ6SqbV9y/nSWHyWr8c1nN29CHbxxzC7RQv0JnoFlWt+w7uQ6jMZvvvobQ2JX2jOsui63NLHm2e4TlHcUNVwH12MfBpMLkenMZwe4uh91CpuJCxANsc1KyceaBEoSb+LMFXvFdT52EkuJP88nHNyntSx9+hClWNyTMy3guyFnwzZe3JP6RDGqXth7igCP9FzFGYSHVDFBXekjFf9PYXKB9lAwpJZMCFF2I7xJbimIZmjL4by1tfST6bNx42bcm/d4BBkDxlueVyHeDvQ0DA8MiMMYmxpbxYIM2tW+TnspyzImQWdTzfUBR//SkuhvU5cD7OEYAQJdHvOUkQHepFbeDaJa1pVtjnOsZwlKfVuEIdSdskDxysfqUFXS5Y736jGk2s9QT9I4GCKrbk+pMqebXqZOwxYdkgcf9FRkN2VT2wDR5KLH6NiDURNZjR+fzpErMb/20he1oWia2JgH/UsYmUK5FcAXJ5yNHmUbT2ntmDK4WhfJAFMm1GWrFdzxS8Q9CKDb0FBOpCHhMlfx3tEOaasa6bT/TskV2690L+ShAWR8LpW6Y2YiTGWo9F6DuuML3gXNj2nqsHgnlwcuVUtYNTb2RfxQTKJ8HkxrNmFHcPrmVOh/gAn83vdRWpyTsJpeEWpO2qFLruhNWnAyJ96Kbf5QyQy2ulxchl5YeXWf9NgpCYwfJJfx+N6tC32cqfEL5C7f/dXT6lElIchOfrl42vILfj1CNLizfugbgRAeddN+Fp2Gj7ItVu3C0NXLlNAi/X6xLNM+PSAbFTPqo41VwaZJ36jfk/F20fLLn+GnHLZBQhfdSBuQELwX6f//fd1aqLgwYV3393J3uHw7D1P/pWwlQS0N7z7q5kTtRKUqq4V4Fn06vuW9oGIrSb3M26KMEXC8E7NcyIhsfTK5H3DxELUIZMeaA2Brhq5Nh4ryyfQaY7gLB6oA+vcu4QQMcGdoatLq5nxe7omE51m+/YaeMyF8Haq3cZ5J/16hvSl4M+7XKGbnxmh4Om/KWlrfL5sDL20aL0RqzREhGjrZOlwA1P8GvBNtG3v/ENAlTxWNq5bF/k1k/CqH2wJSyLNrLABWoR1ZvRw64fhG2u11XYooXyckUpCM8pHFDhtqSZk83+ZLxLkaz8gdsjxaLbNViY0jNbIFO4i4REyDQtsnKHtZsVC4+0EUpn4QmzbR8a6ngN0AuXL17kMfXYDY/CvRKvo1jbLtz3W1LhhD/Df41ZYqJN4439VKfuLpNpsET50AGWqmfVuOKOpzKxpo7ymCotdnZHyAzFNNF/G0qukFyxPtQwJiloASFvV0pKJnXaphgFRhfUiIZDt6XJZN2+2DiMWpBp3hE3/e9Fk6PA4FWjkX5eYWDIESugSibKKT5/vsyuFnDMra+9odlO3x/URZnN8aWsOexcRWVRiR+6X8IgWrsEjYN9WOvKbiEaN0weV2Rdw9Pi9stcBJ+fQ9ErNxenL7WLOkoO3fsDrfIKBq26pEElqHi5YUL2bjGhZmzs2lC1ZeToiacorM0JsS49eWP8vL3bZQ2b1zE1udvoSUtbVmc8ROyBzKO4DJPndhkTAmQSETeoABEbjV211cjA/L7UnEbYKfi6bU+swFOUgWsk8+1S6wtiEgK2VOPqYXzzkk4twK2gXTGk9h435Q4IXJo26N3cwPvD2tU9L+W9+tHi3aJitbt1+3PWEQmAP1qxHL1V1dSd9IuRnYiQhZ5EJ7X5WujG0/KeIPUxwlX8Qrk748w9dIzo6E3pY1auz9+5WdUDD4eSlLTlY1v/jerO6ryNeNtyFf05umWOxEsYZ8xTGcntN+/1GvSy4qHcHAF4X0gWeP+G93rzC6aUKs7w9MJ3V+ciF8452YzCJb3Ri0VdB0DfftOAwPoggKXAvuL6S1KDTOKwNjfZ8ieZcTogIdOk8nzBq1et+4J8laxmfcukYOoSVI/PU/zzI4/OBNirev6l1+3CF+u7AjA9iuvlfuxUruUaze4sfpAsHkzXYajVFEs/okjE8Yo4UXNSlt9DwmKd+gRm2H/zToj/lbbahABBTArgW2b9TDga78c22OjEUNA0f5MDLdOgGXDEWjYOm2Xy7ocs36RX8AoXUZNaiWzlURJdg4PekQXZSRqSmEQtpu05TOoqYogDO+3AG4UvU45rd+Zp2GbOELr7yo1vbINQwDAB3a88c8X5G9zMAFnC9yvthWd7jkuPYPKVNAslzuKnQCTLEmFQo+PSCLq1xfBLKT/JV6hIx5vOOogn8lD1jWMSy08oWi6frLXl1PuMplR6GHl4pkFnbwM97QRbjrP+8EqdsWCgvhsEd/9+5TDiQwWPRNB9P6fRjVO9C0JRT06iextYPCdOStQiQgk2TQPJKNoQOpk0fh/6ufe3UUFPbu9nVAWF+NHC49WcxzdIDJ2IUyL5+eDdFb8B9e/tzwjuBNtElWmscH1cp/N+ePhmTADkX2mCATHqG4UtuaL9a5O0PR2KWPEDaU3iDBgZOijnp39vvLfuM1pzihyOiF6dP9S8C5R1ViayS/dIfQ9WItg87+75Qo1HWpqoEkfani0+GGtatqDE/qzUAyiAQVlEnk51mn2PMZYdREvh950sxq8pZ3aDox7t7oHSdj0N5Rqr7+wtU2LD19+Ft0Jcb80mHuQypWnkFENUS7HXDy5qo7RL3oP7zMgi26w7FB/pnuhL62KiNWG7RBR0LfncDNrOwJGLnzxN3qafRCxPHgBcVEgfa5XNILXaeky5BkmL6yW3ehbh9u6cbh57N2BWAur23evj1wFw95AQwH9boZc493zRgKgfzspMS8MDUUR1Xn78JrsmOHo3yXw8eUBBKr4sOrAM3WGIpLjaH2r2hSxUM5m3/cIQ/FQYXzPiJ81B/1CBYCrj5nFslIQTZYIIfnctaEyXbZYxwH72vJrIhhaMuPkH6yvMwL94+5KvyfksOdTVVy1W3cc3CeWuj58Oq1XILqC+8evyg2JR6n88pcHgHg5FuGkUEmlXIpDCgv3d64GWP0XTapbxMn5OuEQwMPfUppfNybvxkvfWi9o3vTR12HpbL+Q2n509BjMOEzbal7TRG6Uo9iiA25RXkS614T8//slCyc3UTRpFO5Y4P0cperSM6+CVtgZPtM1ChZhIH/wc83uoLIESnEBrs+LyQUeSnjsvBPrsOEdswbOE3L/JWXLByuo5XYaX/iqsbBmWKKkw22x/C8T2h3ZM3rWxzlvDkw0b3/1rfd3bU6Kp/fDC5fog+cBDWjsK23aIojZ2hA8cG1RyoragSAmNGQOrVz25tKPsKC5GIDSRSyGiV1Ux9NduMVgcqYlbVBoNArelkbsIV0PXwIGFTzEJBWP/eaqwnz/hc6rYQJNnckedB9ZCYgvsIe0ZM2g7hF4xCd6Mlfq+g2M5tbYbGJCgxhfMSBJR5YJIEjmNADQfqgazU1hudrXhfcP29oZru1TGshVD+2/5fI96qOlGw70BPdP7wAILGUff+FeSpeTEXfVPUW6uK7zou9+c/NUpxRUCW5oVwiRqDkIkq0QfRQmHhPL77nKeZ4o9csKeQnBevOkHjcDg6oUwrYWOoXk6QGhf296VAQQ6ln1tliMqP36RFx0uQ6eBPjo9yRGfKWG8x7ChpzM4Ube/ZhtHz6ozpWDOBA1jyzmine1xq/a1w8jtZjrijRGZ81pgvTTJP1hkVca/5KqiOP+JWr1zKF1GbnLQToTXKr/miqvQ+6xEJyfI9bmAH3bvA7dm4vXYPMs0gkJGbakOxodl3M+6kqXktIi1TArMw3+XEpaRX0pal1fzq7Z9nDFSxUydMsHcWDetz4013z7WiMvyf3Ec8235Nk7+K+M8Ip39cmFOXE/O0tRAAiHI0a+I3MpGzMG30ShPBAkAiM7qsyWauDBmdFS/5oLmkp3NhGWKYyY0CM41aEo9shoDi8gQLmuNoq5Mg5TRGuWDrhzP1iC8XAJ3vqPNbYlZen3khT1L3L/VwsBCdNqxQ4xEK/o1aB7yW7mKnhO3Qe8yhm9HM8s9YpRm6LoIWmyiK59lkbxXvc+3AZV1fX8eB96rcCMJsbp1pINrUhvgEWSJhK2PXyz5Qa0bUCV/yoir3J+7CMAtIu4gRRmKiK9LcLu6WocFV3WhiDgzc9qL3dG7EN6YcaQRJQuEaLhnfVYIknAUN69Ehvnk2jE/OGvfzQXxXqsUlu1X52zDHoDKBDJKRbfMkqJsfWfKC2eGzmXPgFeCm32c9Fx6/ZLuTSTt0/LRbpWDVo9zyl3cBFmJYToZub6pYUA/FPy+JVLH3m7ROM/ErDLhVub751lkfb9oCMMO7qo77/U2HauibJP2105vtCmnvtWQrgH2/gNjVgOmf3ddCvvfuc/QYjMrJFHzFFzzYyi6xm6sCjzaft/4zUATbVp0STocghTnGfv7sTMOzdzHI/u9quJ7CJf1WyEtVc/TNh7oMhKNI7SDwfvCbd8iMr+yP7IBthRFGzWRAQLd5Wm78G0w7umJZhRTO54rKHJvaMTgwzvce7TuIHGBmBV8C+N28zP+imlYofM++p8m9jJB/3TSkE1IZ0bR4e1MuO8vXMbyppcSE9AG73CJsI5pPyWo2UHiOsQwN8UPjEyynae1K//gGG+5YLrAq6bTWQwjlJvCv6jhr6tm/CbnVYThweBiZ43AMXG5Eq4mu8JcZ+lV9/TQNb89gW2/ftlEf/JTf19nEVmU1yGBExPtam0QrSueNPQnsEOT+gmWFObFyuINwnR6Jj0vLhD3jYlGPnXHSfdcES+xjvSahkQgPqykS1ff8bP4uE/nLmrmAxnW/LM7XPAt8GBKHH45VS35/230fdvgz8AhvtXUVQHgPouTkR7/yxrm/ea18PW4eU04onxRYYYqZAVZ/80/OK6dTF+7vbSbRhLbtxoHr2/ZWkqJ3C2wqYy7e9T4ljUvfYumR+lIXGSmBqcjNAb+N3tijikHwrx9nUr2e4Wq8G4aLl+89SOhMgRQvD5bJEMpBHOCM0l1xbq5UJmt3Cmds338isrjzSWI0xfTgjgHngaNTRNAj1HmvV9oiefldRwL73uzQkxQ9jUiQ9YpXQyqkpa2MBk66072vbYvs9NzTD+eJUg/ZBVEkfxsLJvVWO6PKUpcfL8SXATbz/T2BHMDREFGD+146cs6IvbsFmmM486nlP8tN40weOWKb8nOdAyw7s+BdxGMbn1daFN8huGMahtUJRQJxb/Tlrrk1LdlQc04JbSPQ7gk7QhajWXxPryEXrtxUhjXTmyV/8Uf42Q3eDpeGwiQvhHTQCK3eXK6xxfel92pB0FjYSD84ttTZADaj7JnDJOtLdJdIUstKg95A8ReY27Z9mIcAguy0Gvo4QQrXhJGQ7euOhtqZMDzcv9GgagUu6nL0y0e1Ch6cOZzVZincLFLkmjuGpJUvTsw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_blue" data-wow-delay="0.2s">
+            Mobile Insecurity
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 07 Oct 2019</p>
+            <p>Updated on 16 Jan 2020</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <em>CyberSense is a monthly bulletin by CSA that spotlights salient cybersecurity topics, trends and technologies, based on curated articles and commentaries. CSA provides periodic updates to these bulletins when there are new developments.</em><br />
+<br />
+<br />
+<strong><span style="font-size: 18px;">OVERVIEW</span></strong><br />
+<br />
+Mobile mania hit Singapore again in September 2019 with the launch of some freshly dropped Apples, in the form of the iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max. Owning the latest hardware is, of course, only half the story: what each of these handheld supercomputers offers is the ability to load all kinds of apps - providing entertainment, connectivity with family and friends, and also serve as a productivity tool for work.  However, we are often unaware of the risks inherent in such devices and apps. This can be from simply clicking &ldquo;Yes&rdquo; when asked if you would allow an app to access your device&rsquo;s phonebook or hardware. The <a href="mobile-threats.html">previous issue</a> of CyberSense focused on the problem of mobile malware; building on this, we now look at some security risks that mobile phones and apps themselves present.<br />
+<br />
+<img class="responsive;" alt="OS security" src="../-/media/singcert/cybersense/OS%20security.jpg" /><br />
+<br />
+<strong><span style="font-size: 18px;">REPORTS</span></strong><br />
+<br />
+<strong><span style="text-decoration: underline;">SOFTWARE FRAGMENTATION</span></strong><br />
+<br />
+Over half of all Android devices (that&rsquo;s more than <strong>one billion </strong>units) are running firmware currently more than two years out of date; this problem will likely worsen with time, given that the uptake of new versions of Android operating systems (OS) appears to be slowing. This issue of older versions of OSes remaining on active mobile devices, or &lsquo;fragmentation&rsquo; as it is known, is particularly serious for Android-based smartphones. .<br />
+<br />
+Part of the problem can be attributed to different smartphone manufacturers adding their customised builds (skins, features, preloaded apps, etc.) on top of Google&rsquo;s base Android OS, which has the effect of extending the upgrade cycle for these smartphones. In a recent blog post, Sony summarises what is involved when manufacturers develop their own firmware upgrades: lengthy, multi-stage processes that include rationalising the new OS with the hardware, integrating it with the manufacturer&rsquo;s set of apps and functions, and several rounds of tests and certifications. To make matters worse, manufacturers have also been known to cease support for &ldquo;older&rdquo; products altogether &ndash; as Samsung recently announced for their S6 smartphone- which is less than three years old.<br />
+<br />
+Mobile devices running outdated versions are prime targets for malware and other mobile exploits, putting their users and developers at risk. Fragmentation, however, is much less of an issue for Apple devices, given how the company maintains total control over its development ecosystem. According to Forbes, more than 65% of Apple devices are currently running the latest firmware; at the same time, devices as old as the iPad Air and iPhone 5S (launched five years ago, in 2013) are still being supported with software updates. On its part, Google launched Project Treble in late 2017, reducing the time needed for manufacturers to develop updates for their devices, but only time will tell if this solves the fragmentation conundrum.<br />
+<br />
+Read on by clicking on the story below:<br />
+<br />
+<ul>
+    <li><a rel="noopener noreferrer" href="https://www.zdnet.com/article/androids-big-problem-over-a-billion-devices-are-more-than-2-years-out-of-date/" target="_blank">Android's big problem: Over a billion devices are more than two years out of date</a></li>
+    <li><a rel="noopener noreferrer" href="https://blogs.sonymobile.com/2017/11/03/journey-android-software-rollout/" target="_blank">The Journey of an Android Software Rollout</a></li>
+    <li><a rel="noopener noreferrer" href="https://arstechnica.com/gadgets/2018/06/talkin-treble-how-android-engineers-are-winning-the-war-on-fragmentation" target="_blank">Talkin&rsquo; Treble: How Android engineers are winning the war on fragmentation</a></li>
+</ul>
+<br />
+<strong>USER NEGLIGENCE</strong><br />
+<br />
+A number of messages would usually pop up when we launch a newly-downloaded app for the first time. These usually inform us of the app&rsquo;s terms of use, and request various kinds of permissions: for example, access to the phone&rsquo;s contacts, camera and media files. Most users tend to grant these permissions freely: case in point, many had willingly granted full access to their Google account in order to play <em>Pokemon Go!</em><br />
+<br />
+By doing so, however, users could unknowingly allow the app to access &ndash; in addition to private data - hardware functions on the smartphone, such as the camera and microphone. It was revealed in Jan 2018 that a large number of gaming apps downloadable from Google&rsquo;s Play Store&nbsp;(and a smaller number from Apple&rsquo;s App Store) were accessing the phone microphone to record ambient sounds around users, to be sold as data to advertisers. The sophistication of such apps has reached the extent where they can continue to gather data even when the apps are not running. This development prompted US lawmakers to query both Apple and Google in July 2018 on the susceptibility of their devices to such activities; Apple replied that users are always asked to approve microphone access to third-party apps, and that the company also required developers to disclose when they were assessing the microphones. Google did not reply, but it was noted that their latest OS (&lsquo;Android Pie&rsquo;) includes privacy protections that could prevent apps from discretely accessing the phone&rsquo;s hardware - provided, of course, if users updated to this firmware version.<br />
+<br />
+Ultimately, it all boils down to being vigilant; a good starting point is to query if an app really needed specific permissions to operate. For example, does a compass app need access to the device&rsquo;s media files? Similarly, is there any reason why a cooking game should require access to one&rsquo;s phonebook? If these seem far-fetched, it might be better not to grant the permission, or give the app a miss altogether.<br />
+<br />
+Read on by clicking on the story below:<br />
+<br />
+<ul>
+    <li><a rel="noopener noreferrer" href="https://www.cnet.com/how-to/pokemon-go-google-account-access/" target="_blank">Pokemon Go can see everything in your Google account. Here's how to stop it</a></li>
+</ul>
+<ul>
+    <li><a rel="noopener noreferrer" href="https://www.businesstimes.com.sg/technology/your-game-may-be-tracking-your-tv-habits" target="_blank">That Game on Your Phone May Be Tracking What You&rsquo;re Watching on TV</a></li>
+</ul>
+<br />
+<strong>COMPANY OWNERSHIP</strong><br />
+<br />
+The John S. McCain National Defense Authorisation Act passed by the US Congress in August 2018 bans government agencies and employees from using phones and hardware made by some Chinese manufacturers, the latest in a series of moves by the US against Chinese companies. In 2012, the US government first banned Huawei from selling telecommunications equipment in the country over national security concerns; this was expanded into an overall ban on Huawei and ZTE from bidding on all government contracts two years later. It was also rumoured that the US government pressured American Telco AT&amp;T to pull out of a deal in January 2018 that would have seen Huawei smartphones sold in AT&amp;T outlets. Given that there had never been any evidence of espionage by either firm, many have speculated that the US government&rsquo;s mistrust appeared to stem from the suspicion that both firms are linked to the Chinese government. There are also suggestions that the enhanced measures against the Chinese companies (especially from the inception of the Trump Administration) was related to the ongoing trade spat between the US and China.<br />
+<br />
+On their part, China had banned Apple products from official use since 2014, citing security concerns; this is in spite of Apple&rsquo;s well-known refusal to cooperate with the US government to extract data from its products. It should be noted that Germany and the UK have, on occasion, also banned Apple devices from official government functions.<br />
+<br />
+Generally, while there is no substantial evidence of systematic abuse of user data by phone manufacturers, several isolated incidents have occurred in the past, including an embarrassing episode for Xiaomi in 2014 when security group F-Secure discovered that their smartphones were siphoning users&rsquo; address books back to a remote server in China.<br />
+<br />
+Read on by clicking on the story below:<br />
+<br />
+<ul>
+    <li><a href="https://techcrunch.com/2018/02/14/u-s-intelligence-agencies-are-still-warning-against-buying-huawei-and-zte-phones/">U.S. intelligence agencies are still warning against buying Huawei and ZTE phones</a></li>
+    <li><a href="https://www.dw.com/en/zte-huawei-bans-genuine-security-concerns-or-part-of-china-trade-spat/a-43456452">ZTE, Huawei bans: Genuine security concerns or part of China trade spat?</a></li>
+    <li><a href="https://www.ibtimes.co.uk/security-firm-shows-xiaomi-smartphones-do-secretly-steal-your-data-1460382">Security Firm Shows Xiaomi Smartphones Do Secretly Steal Your Data</a></li>
+</ul>
+<br />
+<strong>QUICK BYTES</strong><br />
+<br />
+<strong>Google can &lsquo;control&rsquo; your Android phone remotely</strong><br />
+<br />
+On 13 Sept 2018, Android phones running Google&rsquo;s latest OS suddenly had their battery-saver function turned on, much to their users&rsquo; bewilderment. Google later apologised, explaining that their engineers had activated the function by accident. The incident caused considerable alarm as it confirmed what observers had long suspected &ndash; that Google can activate various functions on smartphones running their OS, even without users&rsquo; permission. The incident raises the question of the extent in which one&rsquo;s phone can be accessed or controlled remotely by its manufacturer or OS developer.<br />
+<br />
+<ul>
+    <li><a href="https://www.theverge.com/2018/9/14/17861150/google-battery-saver-android-9-pie-remote-settings-change">Google remotely changed the settings on a bunch of phones running Android 9 Pie</a></li>
+</ul>
+<br />
+<strong>SOURCES INCLUDE: </strong>The Verge, TechCrunch, Ars Technica, The New York Times, ZDNET, and CNET
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 16 Jan 2020
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/publications/mobile-insecurity by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:41 GMT -->
+</html>

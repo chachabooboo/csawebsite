@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.csa.gov.sg/gosafeonline/ecskit/tools/level-2 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:47:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta charset="utf-8" /><title>
+	LEVEL 2
+</title><link href="../../../html/ecs/css/css-2.css" rel="stylesheet" />
+    <script src="../../../../www.google-analytics.com/analytics.js" async=""></script>
+    <script src="../../../html/Csa/js/jquery.min.js"></script>
+    <script src="../../../html/Ecs/js/jquery-migrate.min.js"></script>
+	<script src="../../../html/Ecs/js/vendors/jszip/dist/jszip.min.js"></script>
+	<script src="../../../html/Ecs/js/vendors/jszip/dist/jszip-utils.min.js"></script>
+	<script src="../../../html/Ecs/js/vendors/jszip/dist/FileSaver.min.js"></script>
+	<script src="../../../html/Ecs/js/main.js"></script>
+    <!-- Place GA tracking Code Here -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../../../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-69112727-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+<script src="../../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-596S74V');</script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('.targetDiv').hide();
+            jQuery('.targetDiv:first').show();
+
+            jQuery('.showSingle').click(function () {
+                $(".showSingle").removeClass('selected');
+                $(this).addClass('selected').siblings().removeClass('selected');
+                var target = $(this).data('target');
+                jQuery('.targetDiv').hide();
+                jQuery('#div' + target).fadeIn();
+                $(".showSingle[data-target='" + target + "']").addClass('selected');
+
+            });
+        });
+    </script>
+    <style type="text/css"></style>
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container">
+        <header>
+            <div class="nav_menu_bg">
+                <div class="Nav_menu_main width960">
+                    <div id="ecsplaceholderheadernavmain_0_DivCode">
+    <a href="../../ecskit.html" class="logo">
+<img src="../../../html/ecs/img/logo.png" alt="Gosafeonline" title="Gosafeonline" border="0"/>
+</a>
+<a id="res_menu"><img src="../../../html/Ecs/img/menu_icon.png" alt="Menu"></a>
+<nav class="secondary"><a href="https://www.gov.sg/"><img alt="Singapore Government" 
+title="Singapore Government" src="../../../_/media/ecs/images/sg_logo.png" class="crest"></a>
+<ul class="goverment-nav">
+    <li><a href="../../../content/contact-info.html">Contact Info</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback</a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQS</a></li>
+    <li><a href="../content/sitemap.html">Sitemap</a></li>
+</ul>
+</nav>
+<section class="utilities">
+<!-- font resizer-->
+<ul class="resizer">
+    <li class="print"><a href="#" onclick="window.print();">print</a></li>
+    <li class="decrease rvfs-decrease"><a href="#" onclick="resizeFont('resizeTextSmaller')">decrease</a></li>
+    <li class="increase rvfs-increase"><a href="#" onclick="resizeFont('resizeTextBigger')">increase</a></li>
+</ul>
+<!-- searching-->
+<div class="search">
+<input type="text" placeholder="search" /><a href="#" class="search-icon">search</a>
+</div>
+</section>
+    
+</div>
+
+
+
+
+<div class="topNav">
+    <ul class="nav">
+        <li><a href =../../ecskit.html>Home</a></li><li><a href =../cyber-readiness-quiz.html>Quiz</a></li><li class='hasSubNav'><a href =level-1.html class='active dropDown'>Tools</a><ul><li><a href ='level-1.html'>LEVEL 1</a></li><li><a href ='level-2.html'>LEVEL 2</a></li></ul></li><li><a href =../resource-library.html>Resource Library</a></li><li><a href =../faqs.html>FAQs</a></li>
+    </ul>
+</div>
+
+<script>
+    $("#res_menu").on("click", function () {
+        $(".nav").toggleClass("intro");
+        $("#res_menu").toggleClass("res_menu_active");
+    });
+</script>
+<div id="ecsplaceholderheadernavmain_2_DivCode">
+    <a href="https://www.facebook.com/gosafeonline" target="_blank" class="facebook"><img src="../../../html/ecs/img/facebook.png" alt="Ecs Facebook"></a>
+<a href="https://www.twitter.com/gosafeonline" target="_blank" class="twitter"><img src="../../../html/ecs/img/twitter.png" alt="Ecs twitter"></a>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </header>
+        <!-- // end of header -->
+
+        <!-- Materials Starts Here -->
+        <div class="materials_main">
+            
+
+<div class="materials_nav hidden991">
+    <div class="materials_nav_top"></div>
+    <div class="materials_nav_mid">
+        <h4>LEVEL 2<br>
+            <span>Tools</span></h4>
+            <ul><li><a class='showSingle selected' data-target='1'>Level 2 Roll-out Plan</a></li><li><a class='showSingle' data-target='2'>Management Buy-in Deck</a></li><li><a class='showSingle' data-target='3'>Town Hall Guide</a></li><li><a class='showSingle' data-target='4'>Personality Quiz</a></li><li><a class='showSingle' data-target='5'>Posters</a></li><li><a class='showSingle' data-target='6'>Employee Advocacy Programme Guide</a></li><li><a class='showSingle' data-target='7'>Employee Challenge</a></li></ul>
+    </div>
+    <div class="materials_nav_bottom"></div>
+</div>
+
+<div class="mob_nav_mid">
+    <h2>LEVEL 2 Tools</h2>
+    <ul><li><a class='showSingle selected' data-target='1'>Level 2 Roll-out Plan</a></li><li><a class='showSingle' data-target='2'>Management Buy-in Deck</a></li><li><a class='showSingle' data-target='3'>Town Hall Guide</a></li><li><a class='showSingle' data-target='4'>Personality Quiz</a></li><li><a class='showSingle' data-target='5'>Posters</a></li><li><a class='showSingle' data-target='6'>Employee Advocacy Programme Guide</a></li><li><a class='showSingle' data-target='7'>Employee Challenge</a></li></ul>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var t = $('.mob_nav_mid');
+        $('.mob_nav_mid').remove();
+        t.insertBefore('#div1');
+    });
+    jQuery(function () {
+        jQuery('.targetDiv').hide();
+        jQuery('.targetDiv:first').show();
+
+        jQuery('.showSingle').click(function () {
+            $(".showSingle").removeClass('selected');
+            $(this).addClass('selected').siblings().removeClass('selected');
+            var target = $(this).data('target');
+            jQuery('.targetDiv').hide();
+            jQuery('#div' + target).fadeIn();
+            $(".showSingle[data-target='" + target + "']").addClass('selected');
+
+        });
+    });
+</script>
+            
+
+<div class="materials_content">
+    <div class='targetDiv' id='div1'style='display: none;'><h1 class='materials_content_title hidden991'>Level 2 Roll-out Plan<span> Total Tools: 1</span></h1><div class='materials_content_main'><div class='hidden991'><p>This roll-out plan is your guide to rolling out Level 2 of the Employee Cybersecurity Kit. It showcases an overview of the recommended roll-out sequence, mapped against the projected 8-week duration and all five stages of behavioural change that it will take your employees through. This level requires between 40-50 hours to execute over 8-10 weeks, and can be extended for a longer period if desired.</p></div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/level_2_buy-in-deck.jpg' alt=''><span class='line1'>&#8203;Level 2<br>
+	Roll-Out Plan</span></br><a href = "../-/media/ecs/tools/level-2/attachment/employee_cybersecurity_kit-level2_roll-out_plan.pdf" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga1');" > Download </a> </div></div></div><div class='targetDiv' id='div2'style='display: none;'><h1 class='materials_content_title hidden991'>Management Buy-in Deck<span> Total Tools: 1</span></h1><div class='materials_content_main'><div class='hidden991'><p>Need some help to convince your peers and seniors that rolling out the Employee Cybersecurity Kit is a  good move? This easy-to-follow presentation will help you establish the importance of employee education on cybersecurity, demonstrate how cybersecurity breaches can adversely impact your company's bottom line, and showcase the benefits of using the Kit. With the added guide, you will need less than two hours to adapt the presentation for your company. Good luck!</p></div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/level_2_buy-in-deck.jpg' alt=''><span class='line1'>Management Buy-In Deck</span></br><a href = "../-/media/ecs/tools/level-2/attachment/CSA%20ECS%20Kit%20Management%20Buy-In%20Deck.zip" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga2');" > Download </a> </div></div></div><div class='targetDiv' id='div3'style='display: none;'><h1 class='materials_content_title hidden991'>Town Hall Guide<span> Total Tools: 1</span></h1><div class='materials_content_main'><div class='hidden991'><p>
+    Your company’s renewed commitment to cybersecurity calls for a “town hall”. This is an open gathering - usually accompanied by food and drink - to which all employees are invited. It is a personal yet semi-formal way to engage with your employees and/or stakeholders.
+</p>
+<p>
+A “town hall” allows employees to hear from their management the reasons for and the nature of their commitment to cybersecurity. It provides an open forum for questions from employees so that buy-in happens on an individual level. Most importantly, the town hall should pique interest in cybersecurity and remind them of the important role they play in keeping their company safe online.
+</p>
+<p>This guide to holding a Town Hall offers an operational plan and session agenda that can be adapted for your company’s needs.</p></div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/town_hall_guide.jpg' alt=''><span class='line1'>Town Hall Guide</span></br><a href = "../-/media/ecs/tools/level-2/attachment/CSA_ECS_Town_Hall_Guide.pdf" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga3');" > Download </a> </div></div></div><div class='targetDiv' id='div4'style='display: none;'><h1 class='materials_content_title hidden991'>Personality Quiz<span> Total Tools: 1</span></h1><div class='materials_content_main'><div class='hidden991'><p>
+The “Are you 21st Century Ready?” Quiz is a quick, fun way for employees to get a better understanding of where they stand on the cybersecurity spectrum and discover their strengths and weaknesses. The quiz should take just 3-5 minutes to complete.
+</p>
+<p>
+The quiz will also help your company obtain a snapshot of current levels of employee preparedness across the board to better tailor information for the Kit roll-out.
+</p>
+<p>
+It is recommended that your company share the online hosted link to the quiz via e-mail after the Town Hall for easier collection and analysis of the quiz results.
+</p></div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/personality_quiz.jpg' alt=''><span class='line1'>'Are You 21st Century Ready?' Quiz Guide</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Employee%20Cybersecurity%20Kit%20-%20How%20To%20Be%2021st%20Century%20Ready%20Quiz.pdf" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga4');" > Download </a> </div></div></div><div class='targetDiv' id='div5'style='display: none;'><h1 class='materials_content_title hidden991'>Posters<span> Total Tools: 10</span></h1><div class='materials_content_main'><div class='hidden991'><p>
+Here are five sets of two posters each, which can be printed and displayed around the office. The posters are designed to increase employees’ understanding of cybersecurity, by highlighting five common areas in which employees could cause potentially devastating consequences to the company.
+</p>
+<p>
+It is recommended that the posters are displayed a week after the Announcement eDM has been sent out, so that it coincides with the dissemination of the first weekly eDM.
+
+</p></div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/1usenumberssymbolsinpassword.jpg' alt=''><span class='line1'>Poster #1<br>
+Use letters, numbers &amp; symbols in your passwords</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster1.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga5');" > Download </a> </div><div class='materials_download materials_download_mid'><img src = '../-/media/ecs/tools/level-2/images/21passwordisneverenough.jpg' alt=''><span class='line1'>Poster #2<br>
+1 password is never enough</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster2.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga6');" > Download </a> </div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/3carefulwhereyoupointandclick.jpg' alt=''><span class='line1'>Poster #3<br>
+Careful where you point and click</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster3.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga7');" > Download </a> </div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/4dontrevealtoomuchonline.jpg' alt=''><span class='line1'>Poster #4<br>
+Don’t reveal too much online</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster4.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga8');" > Download </a> </div><div class='materials_download materials_download_mid'><img src = '../-/media/ecs/tools/level-2/images/5youneverknowpublicwifi.jpg' alt=''><span class='line1'>Poster #5<br>
+You never know who’s watching on public Wi-Fi</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster5.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga9');" > Download </a> </div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/6shoppingonpublicwifi.jpg' alt=''><span class='line1'>Poster #6<br>
+Shopping can be risky on public Wi-Fi</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster6.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga10');" > Download </a> </div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/7makesureyoulock.jpg' alt=''><span class='line1'>Poster #7<br>
+Make sure you lock your smart phone</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster7.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga11');" > Download </a> </div><div class='materials_download materials_download_mid'><img src = '../-/media/ecs/tools/level-2/images/8makesurebyoddoesntbecome.jpg' alt=''><span class='line1'>Poster #8<br>
+Make sure BYOD doesn’t become OMG</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster8.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga12');" > Download </a> </div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/9keepyourposteruptodate.jpg' alt=''><span class='line1'>Poster #9<br>
+Keep your software up-to-date</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster9.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga13');" > Download </a> </div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/10protectyourselffrommalware.jpg' alt=''><span class='line1'>Poster #10<br>
+Protect yourself from malware</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Poster10.jpg" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga14');" > Download </a> </div><div class='materials_download materials_download_all'><a onclick="downloadAll('../-/media/ecs/tools/level-2/attachment/poster1.jpg--/gosafeonline/ecskit/-/media/ecs/tools/level-2/attachment/poster2.jpg--/gosafeonline/ecskit/-/media/ecs/tools/l/poster10.805.delaye', 'jpg--jpg--jpg--jpg--jpg--jpg--jpg--jpg--jpg--jpg', 'Posters');return false;" href="#"><img src = '../../../html/ecs/img/materials_download_all.png' alt =''></div></a></div></div><div class='targetDiv' id='div6'style='display: none;'><h1 class='materials_content_title hidden991'>Employee Advocacy Programme Guide<span> Total Tools: 1</span></h1><div class='materials_content_main'><div class='hidden991'><p>The Employee Cybersecurity Advocacy Programme guide is a guide to building a core group of IT- and security-savvy employees
+and channelling their interest in technology and cybersecurity into:</p>
+<ul>
+    <li>Helping the IT department in fielding IT-security-centric questions and concerns from other employees</li>
+    <li>Helping to make the topic of cybersecurity more accessible to the common employee </li>
+    <li>Learning even more about cybersecurity through relevant courses so as to become qualified to help address basic/non-urgent
+    cybersecurity concerns/questions</li>
+    <li>Eventually working with the IT and HR departments to further the company&rsquo;s cybersecurity agenda and culture</li>
+</ul>
+<p>
+Creating an advocate programme is not difficult or demanding. Employees and companies organise informal advocate programmes
+all the time, such as activity clubs or volunteering opportunities. This guide provides a simple breakdown of how to
+organise and execute such a programme, and companies are invited to make their own adjustments to suit the organisational
+context.
+</p></div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/employee_prog_guide.jpg' alt=''><span class='line1'>Employee Cybersecurity Advocacy Programme Guide</span></br><a href = "../-/media/ecs/tools/level-2/attachment/CSA_ECS_Employee_Cyber_Security_Advocacy_Programme.pdf" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga16');" > Download </a> </div></div></div><div class='targetDiv' id='div7'style='display: none;'><h1 class='materials_content_title hidden991'>Employee Challenge<span> Total Tools: 1</span></h1><div class='materials_content_main'><div class='hidden991'><p>
+The Employee Cybersecurity Challenge Guide is designed for companies who are ready to take a more engaging and immersive
+approach to reinforcing the cybersecurity awareness, knowledge and measures of employees. It is a flexible, plug-and-play
+guide.
+</p>
+<p>
+The Challenge will gamify common cyber threats at the workplace, in order to encourage employees to recall and perform the
+cybersecurity measures they have learned through the preceding Kit assets. The company will also be able to evaluate
+the state of cyber-readiness of the company and keep track of which of the simulated cyber threats they might need to
+step up on protecting against.
+</p>
+<p>
+The challenge consists of setting up three basic cyber threats and sending them out to employees. These cyber threats are:
+</p>
+<ul>
+    <li>Phishing e-mails</li>
+    <li>Privacy breach</li>
+    <li>Unsecured Wi-Fi networks</li>
+</ul>
+<p>
+It is recommended that this challenge take place over three to four weeks, depending on the company&rsquo;s resourcing capability.
+Companies can choose which challenges they wish to carry out and the sequence in which to carry them out.
+</p></div><div class='materials_download'><img src = '../-/media/ecs/tools/level-2/images/employee_challenge.jpg' alt=''><span class='line1'>Employee Cybersecurity Challenge Guide</span></br><a href = "../-/media/ecs/tools/level-2/attachment/Employee%20Cybersecurity%20Kit%20-%20Employee%20Cybersecurity%20Challenge%20Guide.pdf" target= '_blank' onclick= "trackingGA('Top Tips Stickers', 'Single Download','tga17');" > Download </a> </div></div></div>
+</div>
+
+<script>
+    function downloadAll(attachments, exts, zipFileName) {
+        var attList = attachments.split("--");
+        var attLength = attList.length;
+        var extsList = exts.split("--");
+        var zip = new JSZip();
+        var count = 0;
+        attList.forEach(function (att) {
+        	var filename = att.split('../../../index.html').pop().replace(/\.[^/.]+$/, "") + "." + extsList[count];
+        	JSZipUtils.getBinaryContent(att, function (err, data) {
+        		if (err) { throw err; }
+        		zip.file(filename, data, { binary: true });
+        		count++;
+        		if (count == attList.length) {
+        			var zipFile = zip.generateAsync({ type: "blob" }).then(function (content) {
+        				saveAs(content, zipFileName + ".zip");
+        			});
+        		}
+        	});
+        });
+    }
+</script>
+
+        </div>
+        <!-- Materials Ends Here -->
+
+        <footer class="footer MaterialsFooter">&nbsp;</footer>
+        <div style="background-color:#000; width: 100%;">
+        <div class="EcsFooter">
+            <div id="ecsplaceholderfooter_0_DivCode">
+    <ul class="site-credentials">
+    <li>
+    <a href="../../../content/privacystatement-3.html">Privacy statement </a>
+    </li>
+    <li>
+    <a href="../../../content/termsofuse-2.html">Terms of use</a>
+    </li>
+    <li><a href="../../../content/rate-this-website-2.html" target="_blank">Rate Our Website</a></li>
+</ul>
+    
+</div>
+
+
+<div id="ecsplaceholderfooter_1_DivCode">
+    <div class="last-update">
+        Last updated 17 Aug 2017
+    </div>
+</div>
+
+        </div>
+            </div>
+    </div>
+
+    <!--
+Start of DoubleClick Floodlight Tag: Please do not remove
+Activity name of this tag: NSCS - Cyber Toolkit - Materials
+URL of the webpage where the tag is expected to be placed: https://login.sbf.org.sg/employeecybersecuritykit/
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 10/29/2015
+-->
+    <script type="text/javascript">
+        var axel = Math.random() + "";
+        var a = axel * 10000000000000;
+        document.write('<iframe src="https://4261031.fls.doubleclick.net/activityi;src=4261031;type=mater0;cat=nscs-0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+    </script>
+    <iframe width="1" height="1" src="https://4261031.fls.doubleclick.net/activityi;src=4261031;type=mater0;cat=nscs-0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=9381212226559.101?" frameborder="0" style="display: none"></iframe>
+    <noscript>
+&lt;iframe src="https://4261031.fls.doubleclick.net/activityi;src=4261031;type=mater0;cat=nscs-0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"&gt;&lt;/iframe&gt;
+</noscript>
+    <!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+
+    <!-- Google Code for Downloads Conversion Page -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 973870650;
+        var google_conversion_language = "en";
+        var google_conversion_format = "3";
+        var google_conversion_color = "ffffff";
+        var google_conversion_label = "-R_pCIz26WAQuqyw0AM";
+        var google_remarketing_only = false;
+        /* ]]> */
+    </script>
+    <script src="../../../../www.googleadservices.com/pagead/f.txt" type="text/javascript">
+    </script>
+    <img width="1" height="1" style="display: none" alt="" src="https://www.googleadservices.com/pagead/conversion/973870650/?random=1472707821875&amp;cv=8&amp;fst=1472707821875&amp;num=1&amp;fmt=3&amp;label=-R_pCIz26WAQuqyw0AM&amp;bg=ffffff&amp;hl=en&amp;guid=ON&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_his=15&amp;u_tz=480&amp;u_java=true&amp;u_nplug=2&amp;u_nmime=3&amp;frm=0&amp;url=https%3A%2F%2Flogin.sbf.org.sg%2FEmployeeCyberSecurityKit%2Flevel1-materials.html&amp;ref=https%3A%2F%2Flogin.sbf.org.sg%2FEmployeeCyberSecurityKit%2Flevel2-materials.html&amp;tiba=Lets%20Stand%20Together%20%7C%20Materials" border="0">
+    <noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/973870650/?label=-R_pCIz26WAQuqyw0AM&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+&lt;/div&gt;
+</noscript>
+    <!-- End of Google Code for Downloads Conversion Page: Please do not remove -->
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/gosafeonline/ecskit/tools/level-2 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:47:10 GMT -->
+</html>

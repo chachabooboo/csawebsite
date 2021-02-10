@@ -1,0 +1,473 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/advisories/ad-2020-008 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	Protecting Your Enterprise from Business Email Compromise Attacks
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="description" content="There has been an increasing trend of Business Email Compromise (BEC) attacks reported to SingCERT. Some of these reports relate to Microsoft 365, as Microsoft’s platforms are often targeted by criminals in such BEC attacks given that it is commonly used by businesses. Enterprises need to protect themselves from such attacks by raising cybersecurity awareness and promoting the adoption of good cyber hygiene practices among their employees." />
+<meta name="twitter:description" content="There has been an increasing trend of Business Email Compromise (BEC) attacks reported to SingCERT. Some of these reports relate to Microsoft 365, as Microsoft’s platforms are often targeted by criminals in such BEC attacks given that it is commonly used by businesses. Enterprises need to protect themselves from such attacks by raising cybersecurity awareness and promoting the adoption of good cyber hygiene practices among their employees." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/advisory.jpg" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | Protecting Your Enterprise from Business Email Compromise Attacks" />
+<meta property="twitter:title" content="CSA | SingCERT | Protecting Your Enterprise from Business Email Compromise Attacks" />
+<meta property="og:description" content="There has been an increasing trend of Business Email Compromise (BEC) attacks reported to SingCERT. Some of these reports relate to Microsoft 365, as Microsoft’s platforms are often targeted by criminals in such BEC attacks given that it is commonly used by businesses. Enterprises need to protect themselves from such attacks by raising cybersecurity awareness and promoting the adoption of good cyber hygiene practices among their employees." />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/advisories/ad-2020-008" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/advisory.jpg" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | Protecting Your Enterprise from Business Email Compromise Attacks" />
+<meta itemprop="description" content="There has been an increasing trend of Business Email Compromise (BEC) attacks reported to SingCERT. Some of these reports relate to Microsoft 365, as Microsoft’s platforms are often targeted by criminals in such BEC attacks given that it is commonly used by businesses. Enterprises need to protect themselves from such attacks by raising cybersecurity awareness and promoting the adoption of good cyber hygiene practices among their employees." />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/advisory.jpg" />
+</head>
+<!-- body-->
+<body class="singcert singcert_advisories singcert_advisories_ad-2020-008">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/advisories/ad-2020-008" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_yellow" data-wow-delay="0.2s">
+            Protecting Your Enterprise from Business Email Compromise Attacks
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 06 Nov 2020</p>
+            <p>Updated on 06 Nov 2020</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <p style="margin: 0cm 0cm 8pt;"><strong><span style="text-decoration: underline;">Joint Advisory by Cyber Security Agency of Singapore (CSA) and Microsoft</span></strong></p>
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><span>There has been an increasing trend of Business Email Compromise (BEC) attacks reported to SingCERT. Some of these reports relate to Microsoft 365, as Microsoft&rsquo;s platforms are often targeted by criminals in such BEC attacks given that it is commonly used by businesses. Enterprises need to protect themselves from such attacks by raising cybersecurity awareness and promoting the adoption of good cyber hygiene practices among their employees. </span></p>
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><strong><span>What is BEC</span></strong><span>?&nbsp; A BEC is </span><span>an email-based fraud technique that is designed to gain access to critical business information or extract money through fraudulent </span><span>requests for payment or wire transfer. </span><span>The most common method used by BEC attackers is the </span><span>impersonation of a company's&nbsp;CEO, business partner or&nbsp;a known contact of&nbsp;the victim, using a spoofed email account to send the request. There have also been instances of BEC that utilised compromised employees&rsquo; enterprise email accounts. Email accounts can be compromised through a variety of ways including phishing attacks, the utilisation of data from past data breaches and credential dumps to perform&nbsp;credential stuffing attacks, as well as the harvesting of possible account information of victims from social media platforms.</span></p>
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><span>As more businesses go online, cybercriminals have more opportunities to launch BEC attacks and other cybercrimes.&nbsp; Cybercriminals are also adept at changing their social engineering schemes to reflect current events.&nbsp; As enterprises are the primary targets for such scams, they need to be vigilant and take precautionary measures to guard against BEC attacks. </span></p>
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><strong><span>How do you protect your enterprise against BEC</span></strong><span>? Protection against BEC requires a multi-tier approach to be effective. Enterprises can consider adopting the following recommendations to protect themselves from a BEC attack:</span></p>
+<br />
+<p style="margin: 0cm 0cm 0pt; text-align: justify;"><strong><span>For Enterprise Owners</span></strong></p>
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><span>As BEC attacks rely heavily on social engineering tactics, enterprise owners are advised to do the following: </span></p>
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><span style="text-decoration: underline;">Promote a Culture of (Cyber) Vigilance Among Employees</span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li style="margin: 0cm 0cm 8pt; text-align: justify;"><span>Regularly share cyber hygiene tips and news on current scam/phishing cases</span></li>
+    <li style="margin: 0cm 0cm 8pt; text-align: justify;"><span>Conduct regular phishing drills and remind employees to verify the authenticity of emails, especially those that are suspicious or unsolicited </span></li>
+</ul>
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><span style="text-decoration: underline;">Implement Additional Verification Process for Finance-related Requests </span></p>
+<ul style="list-style-type: disc;">
+    <li>
+    <p style="text-align: justify; margin-top: 0cm; margin-bottom: 8pt;"><span>Implement a secondary confirmation* process to verify the authenticity of finance-related requests, including funds transfer, change of supplier or vendor bank account, and invoice payment</span></p>
+    </li>
+</ul>
+<p style="text-align: justify; color: #000000; margin-top: 0cm; margin-bottom: 8pt;"><span>*This secondary confirmation should be via a different medium (i.e. phone call or text message) to prevent direct communications with the criminal, in the event the email account has been compromised. </span></p>
+<p style="text-align: justify; color: #000000; margin-top: 0cm; margin-bottom: 8pt;"><span>&nbsp;</span></p>
+<strong>For Enterprise IT Teams</strong>
+<p style="text-align: justify; color: #000000; margin-top: 0cm; margin-bottom: 8pt;"><span>Enterprises can strengthen their IT infrastructure posture to prevent spoofed emails from reaching their employees by implementing the following:</span></p>
+<p style="text-align: justify; color: #000000; margin-top: 0cm; margin-bottom: 8pt;"><span style="text-decoration: underline;">Block Malicious or Spoofed Emails</span></p>
+<ul style="list-style-type: disc;">
+    <li>
+    <p style="margin-top: 0cm; margin-bottom: 0pt;"><span>If your enterprise is using Microsoft 365, you can:</span></p>
+    <ol style="list-style-type: decimal;">
+        <li style="color: #000000;">
+        <p style="color: #000000; margin-top: 0cm; margin-bottom: 0pt;"><span>Enable anti-spoofing protection, anti-phishing policies and email authentication (details here &ndash; </span><span><a rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spoofing-protection?view=o365-worldwide" target="_blank"><span style="text-decoration: underline;">link</span></a></span><span>).</span></p>
+        </li>
+        <li style="color: #000000;">
+        <p style="color: #000000; margin-top: 0cm; margin-bottom: 0pt;"><span>Enable anti-malware policies (details here &ndash; <a rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide" target="_blank"><span style="text-decoration: underline;">link</span></a>).</span></p>
+        </li>
+        <li style="color: #000000;">
+        <p style="color: #000000; margin-top: 0cm; margin-bottom: 8pt;"><span>Enable the &ldquo;Report Message&rdquo; function (details here &ndash; </span><span><a rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop?view=o365-worldwide" target="_blank"><span style="text-decoration: underline;">link</span></a></span><span>), and encourage employees to report any possible phishing email for investigation.</span></p>
+        </li>
+    </ol>
+    </li>
+</ul>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li style="margin: 0cm 0cm 0pt; text-align: justify;"><span>If your enterprise is not using Microsoft 365,</span></li>
+</ul>
+<ul style="list-style-type: disc;">
+    <ol style="list-style-type: decimal;">
+        <li>
+        <p style="text-align: justify; margin-top: 0cm; margin-bottom: 0pt;"><span>Implement filters at the email gateway to filter out emails with known malware spamming indicators and block suspicious IP addresses at the firewall.</span></p>
+        </li>
+        <li style="color: #000000;">
+        <p style="text-align: justify; color: #000000; margin-top: 0cm; margin-bottom: 0pt;"><span>Use free email authentication tools such as Domain-based Message Authentication, Reporting and Conformance&nbsp;(DMARC)&nbsp;which can help detect&nbsp;spoofed emails.</span></p>
+        </li>
+    </ol>
+</ul>
+<p style="text-align: justify; color: #000000; margin-top: 0cm; margin-bottom: 8pt;"><span style="text-decoration: underline;">Implement Strong Password Policies </span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li style="margin: 0cm 0cm 8pt; text-align: justify;"><span>Enforce regular password changes, and require the use of strong passwords</span></li>
+</ul>
+<ul style="list-style-type: disc;">
+    <li>
+    <p style="text-align: justify; margin-top: 0cm; margin-bottom: 8pt;"><span>Enable multi-factor authentication (MFA) where possible for enhanced security, especially for employees with the authority to authorise payment &ndash; For users of Microsoft 365, visit this </span><span><a rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365?view=o365-worldwide" target="_blank"><span style="text-decoration: underline;">link</span></a></span><span> for information on how to enable the MFA.</span></p>
+    </li>
+</ul>
+<p style="text-align: justify; color: #000000; margin-top: 0cm; margin-bottom: 8pt;"><span style="text-decoration: underline;">Maintain System Hygiene</span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li style="margin: 0cm 0cm 8pt; text-align: justify;"><span>Ensure that automatic updates are enabled for the antivirus software, and perform a full scan of the machine(s)&nbsp;in your network&nbsp;regularly</span></li>
+    <li style="margin: 0cm 0cm 8pt; text-align: justify;"><span>Conduct regular audits on user passwords against common password lists by using available resources and tools online</span></li>
+    <li style="margin: 0cm 0cm 8pt; text-align: justify;"><span>Verify and remove any unauthorised/suspicious/dormant user accounts in the system as these could be leveraged to gain access into the system</span></li>
+    <li style="margin: 0cm 0cm 8pt; text-align: justify;"><span>Check for and remove any suspicious email forwarding rules</span></li>
+    <li style="margin: 0cm 0cm 8pt; text-align: justify;"><span>Monitor the authentication logs and investigate multiple unsuccessful login attempts</span></li>
+</ul>
+<p style="margin: 0cm 0cm 0pt; text-align: justify;"><span style="text-decoration: none;">&nbsp;</span></p>
+<p style="margin: 0cm 0cm 0pt; text-align: justify;"><strong><span>For Employees</span></strong></p>
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><span>Employees have a key role to play in thwarting BEC attempts.</span></p>
+<p style="margin: 0cm 0cm 8pt; text-align: justify;"><span style="text-decoration: underline;">
+Inspect suspicious / urgent emails closely</span></p>
+<ul style="list-style-type: disc;">
+    <li>
+    <p style="margin-top: 0cm; margin-bottom: 0pt;"><span>Typically, phishing campaigns&rsquo; emails will sound urgent and list dire consequences if the recipient does not act promptly. BEC-type emails may also ask the recipient to change the designated account for receiving wire payments. </span></p>
+    </li>
+    <li style="color: #000000;">
+    <p style="color: #000000; margin-top: 0cm; margin-bottom: 0pt;"><span>Seek confirmation using a different medium (i.e. phone call or text message) before proceeding with an important instruction that was sent via the email. Report any suspicious phishing email to your administrator and do not click on any links or open any attachments from the email. </span></p>
+    <p style="text-align: justify; color: #000000; margin-top: 0cm; margin-bottom: 8pt;"><span>&nbsp;</span></p>
+    </li>
+</ul>
+<p style="margin: 0cm 0cm 0pt; text-align: justify;"><span>Enterprises using services from Microsoft 365 are encouraged to refer to the additional weblinks and online product documentation for information on implementing measures to allow employees to report junk and phishing email in Outlook, and to enable MFA for an additional layer of security for sign-ins.</span></p>
+<p style="margin: 0cm 0cm 0pt 36pt;"><span>&nbsp;</span></p>
+<p style="margin: 0cm 0cm 8pt;"><span>More information is available at:</span></p>
+<p style="margin: 0cm 0cm 8pt;"><span><a rel="noopener noreferrer" href="../../gosafeonline/go-safe-for-me/homeinternetusers/spot-signs-of-phishing.html" target="_blank"><span style="text-decoration: underline;">https://www.csa.gov.sg/gosafeonline/go-safe-for-me/homeinternetusers/spot-signs-of-phishing</span></a></span></p>
+<p style="margin: 0cm 0cm 8pt;"><span><a rel="noopener noreferrer" href="https://news.microsoft.com/on-the-issues/2020/07/23/business-email-compromise-cybercrime-phishing/" target="_blank"><span style="text-decoration: underline;">https://news.microsoft.com/on-the-issues/2020/07/23/business-email-compromise-cybercrime-phishing/</span></a></span></p>
+<p style="margin: 0cm 0cm 8pt;"><span><a rel="noopener noreferrer" href="https://www.microsoft.com/security/blog/office-365-security/" target="_blank"><span style="text-decoration: underline;">https://www.microsoft.com/security/blog/office-365-security/</span></a></span></p>
+<span><a rel="noopener noreferrer" href="https://docs.microsoft.com/en-us/microsoft-365/?view=o365-worldwide" target="_blank"><span style="text-decoration: underline;">https://docs.microsoft.com/en-us/microsoft-365/?view=o365-worldwide</span></a></span>
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 06 Nov 2020
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/advisories/ad-2020-008 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:30 GMT -->
+</html>

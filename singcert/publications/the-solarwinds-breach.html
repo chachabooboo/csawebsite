@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/publications/the-solarwinds-breach by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	The SolarWinds Breach
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="description" content="A closer look at the SolarWinds breach, how agencies have responded to it, and what we can learn from it." />
+<meta name="twitter:description" content="A closer look at the SolarWinds breach, how agencies have responded to it, and what we can learn from it." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | The Solarwinds Breach" />
+<meta property="twitter:title" content="CSA | SingCERT | The Solarwinds Breach" />
+<meta property="og:description" content="A closer look at the SolarWinds breach, how agencies have responded to it, and what we can learn from it." />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/publications/the-solarwinds-breach" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | The Solarwinds Breach" />
+<meta itemprop="description" content="A closer look at the SolarWinds breach, how agencies have responded to it, and what we can learn from it." />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+</head>
+<!-- body-->
+<body class="singcert singcert_publications singcert_publications_the-solarwinds-breach">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/publications/the-solarwinds-breach" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_blue" data-wow-delay="0.2s">
+            The SolarWinds Breach
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 02 Feb 2021</p>
+            <p>Updated on 02 Feb 2021</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <div style="text-align: justify;">
+<p><span style="font-style: italic;">CyberSense is a monthly bulletin by CSA that spotlights salient cybersecurity topics, trends and technologies, based on curated articles and commentaries. CSA provides periodic updates to these bulletins when there are new developments.</span></p>
+<p><span>&nbsp;</span></p>
+<p><strong><span>OVERVIEW</span></strong></p>
+<p><span>&ldquo;One of the most high-profile cyberespionage campaigns in recent years.&rdquo; &ldquo;Among the most ambitious cyber operations ever disclosed.&rdquo; &ldquo;A moment of reckoning.&rdquo; These are some of the descriptors applied to the SolarWinds breach, which the global cybersecurity community has been intently monitoring since it was first reported in mid-December 2020. This issue of CyberSense takes a closer look at what happened, how global agencies and CSA responded to the incident, and a few observations and learning points we picked up. </span></p>
+<p><span>&nbsp;</span></p>
+<p><strong><span>WHAT HAPPENED?</span></strong></p>
+<p><span>In the world of network management software, one name stands head and shoulders above the competition: SolarWinds&rsquo; <em>Orion</em> platform. Used by numerous government agencies and Fortune 500 companies worldwide, it is the pre-eminent product in the network management space. However, it was precisely this market dominance that led hackers to target the Texan firm. Sometime in <a rel="noopener noreferrer" target="_blank" href="https://www.nytimes.com/2021/01/02/us/politics/russian-hacking-government.html">2019</a>, hackers managed to infiltrate SolarWinds&rsquo; production network to insert <a rel="noopener noreferrer" target="_blank" href="https://www.fireeye.com/blog/products-and-services/2020/12/global-intrusion-campaign-leverages-software-supply-chain-compromise.html">malicious code</a> into <em>Orion&rsquo;s</em> software updates. Any organisation that downloaded the tainted updates effectively gave the hackers a backdoor into its network.</span></p>
+<p><span><br />
+<div style="width:100%"><img style="width: auto;height: auto;display: block;margin: auto;max-height: 593px;" height="593" alt="Production network" width="791" src="../-/media/singcert/cybersense/The%20Solarwinds%20Breach%201.jpg" /></div>
+<br />
+</span>The hackers&rsquo; approach and behaviour stood out in this incident. <a rel="noopener noreferrer" target="_blank" href="https://us-cert.cisa.gov/ncas/alerts/aa20-352a">Analysis</a> of their tactics, techniques and procedures showed that the hackers were patient, disciplined, and prioritised stealth to minimise exposure of their operations. Once inside a victim&rsquo;s network, the hackers blended in, and looked for opportunities to escalate privileges (or gain privileged access) and <a rel="noopener noreferrer" target="_blank" href="https://media.defense.gov/2020/Dec/17/2002554125/-1/-1/0/AUTHENTICATION_MECHANISMS_CSA_U_OO_198854_20.PDF">abuse</a> authentication mechanisms. They were observed to have <a rel="noopener noreferrer" target="_blank" href="https://msrc-blog.microsoft.com/2020/12/13/customer-guidance-on-recent-nation-state-cyber-attacks/">forged</a> trusted tokens. These tokens, akin to a security pass belonging to someone in the target organisation with high-level clearance, could grant the hackers access to restricted sections of the target organisation&rsquo;s network as well as its assets in the cloud, such as e-mails. The hackers could also plant more backdoors in other parts of the breached network.<br />
+<br />
+Around 18,000 of SolarWinds&rsquo; public and private sector customers around the world downloaded &ndash; and were hence exposed to &ndash; the malicious software updates. Of these, experts believe that the hackers targeted a much smaller number of organisations with follow-on activity. The vast majority of this smaller group were US-based entities &ndash; US government agencies and tech companies, including the likes of Cisco, VMWare, and Microsoft.</p>
+<p><span>&nbsp;</span></p>
+<p><strong><span>WHAT MAKES THE SOLARWINDS BREACH SO SERIOUS, AND WHAT CAN WE LEARN FROM IT?</span></strong></p>
+<p><span>The SolarWinds breach is an example of a supply chain attack, in which the hacker&rsquo;s intrusion into the victim&rsquo;s network is facilitated by first compromising one of the victim&rsquo;s trusted suppliers.</span></p>
+<p><span><br />
+<div style="width:100%"><img style="width: auto;height: auto;display: block;margin: auto;max-height: 769px;" height="769" alt="Supply Chain Attack" width="874" src="../-/media/singcert/cybersense/The%20Solarwinds%20Breach%202.jpg" /></div>
+<br />
+</span>Supply chain attacks can generate wide &ldquo;ripple effects&rdquo;, due to the interdependencies that characterise the global economy. Organisations today often depend on external vendors such as tech firms and managed service providers. The compromise of a single, trusted supplier &ndash; or a popular and widely-used product &ndash; can result in multiple victims, some of which could be major vendors themselves with even larger customer bases. Such was the case in the SolarWinds breach. Cybersecurity agencies and researchers are still watching for signs of further breaches in the affected tech firms, which could have an even greater impact than the SolarWinds attack.<br />
+<br />
+More insidious and problematic than compromising the SolarWinds supply chain was the hackers&rsquo; abuse of authentication mechanisms, which are a trusted part of a victim&rsquo;s internal network. Their forging of authentication tokens allowed the hackers to roam the targeted network practically at will, as if they were one of the target organisation&rsquo;s trusted employees. This makes detecting the hackers&rsquo; presence and tracing their steps within the network extremely difficult.<br />
+<br />
+What are the key takeaways from this incident? First, it is likely that supply-chain attacks will continue to occur. Organisations should therefore make every effort to improve visibility over the activities and transactions happening inside their networks, especially if they rely on the services of vendors or third-party suppliers. The earlier they can detect breaches, the better their chances of mitigating the fallout in a timely manner.<br />
+<br />
+Second, the SolarWinds breach demonstrates the asymmetric nature of the cybersecurity threat. Hackers can compromise a host of networks by exploiting just one vulnerability in a single supplier, while cybersecurity professionals need to constantly defend across all the systems under their charge, all the time. The odds are steep. Cyber-attacks are a matter of when, not if. Organisations must therefore continue to enhance and develop their cybersecurity capabilities and expertise.<br />
+<br />
+Third, the SolarWinds breach also highlights the importance of the international community&rsquo;s efforts in establishing clear rules and norms to promote responsible behaviour in cyberspace. Without them, cyber threat actors will feel free to act with impunity, endangering the prospects of connected nations and digital economies everywhere.</p>
+<p><span>&nbsp;</span></p>
+<p><strong><span>HOW HAVE AGENCIES RESPONDED GLOBALLY?</span></strong></p>
+<p><span>The interconnected nature of our global networks and supply chains means that many countries are potentially at risk from the fallout of the SolarWinds breach. Cybersecurity agencies around the world have issued advisories providing organisations with guidance to detect and mitigate any potential compromise. The global cybersecurity community have also shared insights and observations on the incident, including characteristics of the malware used to compromise SolarWinds, and methods of detecting and neutralising it.<br />
+<br />
+</span>So far, no government has definitively attributed the SolarWinds breach to any specific threat actor. The US government&rsquo;s assessment, as set out in a <a rel="noopener noreferrer" target="_blank" href="https://www.dni.gov/index.php/newsroom/press-releases/press-releases-2021/item/2176-joint-statement-by-the-federal-bureau-of-investigation-fbi-the-cybersecurity-and-infrastructure-security-agency-cisa-the-office-of-the-director-of-national-intelligence-odni-and-the-national-security-agency-nsa">joint statement</a> by the Federal Bureau of Investigation, Cybersecurity and Infrastructure Security Agency, Office of the Director of National Intelligence, and the National Security Agency, is that an Advanced Persistent Threat actor, "likely Russian in origin&rdquo;, is responsible for the cyber-attack. Russia <a rel="noopener noreferrer" target="_blank" href="https://www.wsj.com/articles/with-solarwinds-hack-suspected-russian-hackers-again-flex-moscows-spycraft-muscle-11608753060">denied</a> any involvement in the cyber-attack on SolarWinds, and claimed that the accusations were more evidence of Russophobia.<br />
+<br />
+There is no indication thus far that Singapore&rsquo;s Critical Information Infrastructure (CII) and Government systems have been adversely affected by the SolarWinds breach. Nonetheless, the risk remains that somewhere along the supply chains of those tech firms that have been targeted, the hackers might have planted additional backdoors in preparation for future attacks. A real fear is that the hackers may have also penetrated the production networks of these tech firms and suppliers to corrupt their products, potentially putting millions of users at risk. <br />
+<br />
+Once the SolarWinds breach was disclosed, CSA immediately raised the alert level and apprised all CII sector leads of the situation. Besides directing agencies to install the necessary patches and carry out thorough scans for indicators of compromise, CSA has also been working with sectors to step up vigilance and daily monitoring, even as the situation continues to evolve and new vulnerabilities are revealed. This involves CII sectors going through their logs over the past months with a fine comb for any indication of suspicious activity, such as unauthorised escalation of privileges and credentials abuse. In addition, CSA also <a rel="noopener noreferrer" target="_blank" href="../alerts/al-2020-049.html">advised</a> the public on <a rel="noopener noreferrer" target="_blank" href="../alerts/al-2020-050.html">steps</a> to better protect their systems against such threats. Most important of these are having full visibility of their networks, and implementing a regime of continuous monitoring for any unusual activity in the networks.<br />
+<br />
+Mindful that cybersecurity is a team sport, CSA has tapped on our international partners closer to the frontline to learn more about the SolarWinds breach. This has helped CSA to better advise CII sectors on the preventive measures to take. CSA also organised virtual meetings with all ASEAN Member States to exchange insights and best practices arising from the incident, so that the region is better prepared against the potential threat that it poses. The proposal to establish an ASEAN CERT information exchange mechanism, welcomed by ASEAN Digital Ministers, will further contribute to regional cyber resilience in the face of transboundary cybersecurity threats.</p>
+<p><span>&nbsp;</span></p>
+<p><strong><span>CONCLUSION</span></strong></p>
+<p><span>The SolarWinds breach will not be the last major cybersecurity incident we face. The capabilities of cyber threat actors will only increase. CSA remains dedicated to the mission of securing cyberspace and protecting our digital way of life. Organisations, big or small, need to steel themselves for the inevitability of future malicious cyber activities and make efforts to strengthen the cybersecurity of their systems.</span></p>
+<p><span>&nbsp;</span></p>
+</div>
+<div style="text-align: center;"><span> </span><hr size="2" width="100%" align="center" style="color: #444444;" />
+</div>
+<p><span>&nbsp;</span></p>
+<p><strong><em><span>SOURCES INCLUDE:</span></em></strong></p>
+<p><span> FireEye, Microsoft Security Response Centre, New York Times, US Cybersecurity and Infrastructure Security Agency, US National Security Agency, Wall Street Journal</span></p>
+<p><span>&nbsp;</span></p>
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 02 Feb 2021
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/publications/the-solarwinds-breach by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:25 GMT -->
+</html>

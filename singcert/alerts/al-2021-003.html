@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/alerts/al-2021-003 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	Multiple Vulnerabilities in Dnsmasq
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="description" content="Security researchers have discovered seven vulnerabilities in dnsmasq software, collectively code-named as &quot;DNSpooq&quot;. Most of them are exploitable remotely on the affected dnsmasq versions prior to version 2.83." />
+<meta name="twitter:description" content="Security researchers have discovered seven vulnerabilities in dnsmasq software, collectively code-named as &quot;DNSpooq&quot;. Most of them are exploitable remotely on the affected dnsmasq versions prior to version 2.83." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/alert.jpg" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | Multiple Vulnerabilities in Dnsmasq" />
+<meta property="twitter:title" content="CSA | SingCERT | Multiple Vulnerabilities in Dnsmasq" />
+<meta property="og:description" content="Security researchers have discovered seven vulnerabilities in dnsmasq software, collectively code-named as &quot;DNSpooq&quot;. Most of them are exploitable remotely on the affected dnsmasq versions prior to version 2.83." />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/alerts/al-2021-003" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/alert.jpg" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | Multiple Vulnerabilities in Dnsmasq" />
+<meta itemprop="description" content="Security researchers have discovered seven vulnerabilities in dnsmasq software, collectively code-named as &quot;DNSpooq&quot;. Most of them are exploitable remotely on the affected dnsmasq versions prior to version 2.83." />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/alert.jpg" />
+</head>
+<!-- body-->
+<body class="singcert singcert_alerts singcert_alerts_al-2021-003">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/alerts/al-2021-003" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_red" data-wow-delay="0.2s">
+            Multiple Vulnerabilities in Dnsmasq
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 21 Jan 2021</p>
+            <p>Updated on 21 Jan 2021</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <p><span class="gmail-author-a-9v4z122zhw9ihyz75zz65z9z85zna">Security researchers have discovered seven vulnerabilities in dnsmasq software, collectively code-named as "DNSpooq".&nbsp;Most of them&nbsp;are exploitable remotely on the&nbsp;affected&nbsp;dnsmasq versions prior to version 2.83. These vulnerabilities are divided into two categories:</span></p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;">DNS Cache Poisoning Vulnerabilities</span></p>
+<ul style="list-style-type: disc;">
+    <li>CVE-2020-25686 - Multiple DNS query requests for the same resource name (RRNAME) by dnsmasq versions prior to version 2.83 allows remote attackers to spoof DNS traffic, using a birthday attack (RFC 5452) that can lead to DNS cache poisoning</li>
+    <li>CVE-2020-25684 - Lack of proper address/port checks implemented in dnsmasq versions prior to version 2.83 reply_query function makes it easier to forge replies to an off-path attacker</li>
+    <li>CVE-2020-25685 - Lack of query resource name (RRNAME) checks implemented in dnsmasq&rsquo;s versions prior to version 2.83 reply_query function allows remote attackers to spoof DNS traffic that can lead to DNS cache poisoning</li>
+</ul>
+<p>The first category of vulnerabilities reduces the entropy of identifiers TXID (Transaction ID) and source port, which makes it easier for attackers to guess a valid DNS reply with a correct combination of port and TXID. This allows attackers to place malicious entries in the DNS server cache and redirect traffic to their server instead of the legitimate server.</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;">Buffer Overflow Vulnerabilities</span></p>
+<ul style="list-style-type: disc;">
+    <li>CVE-2020-25687 - Lack of length checks implemented in dnsmasq&rsquo;s versions prior to version 2.83 extract_name function allow remote attackers to execute large memcpy with a negative size in sort_rrset function that can lead to denial-of-service</li>
+    <li>CVE-2020-25683 - Lack of length checks implemented in dnsmasq&rsquo;s versions prior to version 2.83 extract_name function allow remote attackers to execute large memcpy with a negative size in get_rdata function that can lead to denial-of-service</li>
+    <li>CVE-2020-25682 - Missing length check in dnsmasq&rsquo;s versions prior to version 2.83 extract_name function allows remote attackers to write arbitrary data in a heap-allocated memory, resulting in code execution</li>
+    <li>CVE-2020-25681: <span class="gmail-author-a-z68zz83zz73zz73zmz82z28z84zxz67zz90zz68zz71zz73ze">Missing</span> length check in dnsmasq&rsquo;s versions prior to version 2.83 sort_rrset function allows remote attackers to write arbitrary data in a heap-allocated memory, resulting in code execution</li>
+</ul>
+<p>The second category of vulnerabilities require DNSSEC to be enabled and can be triggered before the validation of the received DNS entries, allowing potential attackers to send crafted DNS replies which would result in heap-based buffer overflows.</p>
+<p>Administrators and users are advised to update dnsmasq software to the latest version (2.83 or above).</p>
+<p>&nbsp;</p>
+<p>More information is available at:</p>
+<p><a href="https://www.jsof-tech.com/disclosures/dnspooq/" target="_blank" rel="noopener noreferrer">https://www.jsof-tech.com/disclosures/dnspooq/</a></p>
+<p><a href="https://www.jsof-tech.com/wp-content/uploads/2021/01/DNSpooq_Technical-Whitepaper.pdf" target="_blank" rel="noopener noreferrer">https://www.jsof-tech.com/wp-content/uploads/2021/01/DNSpooq_Technical-Whitepaper.pdf</a></p>
+<p><a href="https://us-cert.cisa.gov/ics/advisories/icsa-21-019-01" target="_blank" rel="noopener noreferrer">https://us-cert.cisa.gov/ics/advisories/icsa-21-019-01</a></p>
+<p><a href="http://www.thekelleys.org.uk/dnsmasq/doc.html" target="_blank" rel="noopener noreferrer">http://www.thekelleys.org.uk/dnsmasq/doc.html</a></p>
+<p>&nbsp;</p>
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 21 Jan 2021
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/alerts/al-2021-003 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:26 GMT -->
+</html>

@@ -1,0 +1,487 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/advisories/ad-2021-001 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	Strengthen the Security of Your Organisation's Cloud Services
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="description" content="Many organisations have adopted cloud-based IT services. With the proliferation of telecommuting, organisations may allow employees to use both personal and corporate devices to access cloud-based resources." />
+<meta name="twitter:description" content="Many organisations have adopted cloud-based IT services. With the proliferation of telecommuting, organisations may allow employees to use both personal and corporate devices to access cloud-based resources." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/advisory.jpg" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | Strengthen the Security of Your Organisation&#39;s Cloud Services" />
+<meta property="twitter:title" content="CSA | SingCERT | Strengthen the Security of Your Organisation&#39;s Cloud Services" />
+<meta property="og:description" content="Many organisations have adopted cloud-based IT services. With the proliferation of telecommuting, organisations may allow employees to use both personal and corporate devices to access cloud-based resources." />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/advisories/ad-2021-001" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/advisory.jpg" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | Strengthen the Security of Your Organisation&#39;s Cloud Services" />
+<meta itemprop="description" content="Many organisations have adopted cloud-based IT services. With the proliferation of telecommuting, organisations may allow employees to use both personal and corporate devices to access cloud-based resources." />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/advisory.jpg" />
+</head>
+<!-- body-->
+<body class="singcert singcert_advisories singcert_advisories_ad-2021-001">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/advisories/ad-2021-001" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="nOGr/53tr18EUcYn67FxH7axm0V25mNtHBFLOAVJYqO6gx96B1omCagk4JwLTuP63XIRWEX00anqnvXS1ljlEOGG4m36G94QrHnvUe/pFtg6ouZzqIyzoC+kiXpWA7QechJP8bBpZqeqHp0/WOzhupDLPB40TQHceb4Gc454F7rEtgM/lHL+EoLIVc4v/xEIoweJtzH0h1wPo6W0HzhUj4D9wfOMHbLMbIq12pF7GkhZIJBOVs64DaRFuE06eh05yTA3QfhtC43GacPQEMtRQHL4FILKU8lkTjercAICMKwqpNsgCe6nEgBPkMajPtv5I7U18KVq2XlGQerAUnLUOqnG5zH54v3eyNqP+Y6HExB4TupTanMnqPgNWI6TfOM3zyNItquyNppaYla+HZE0Puwda9VzsN3VpsLyQepBq2iGrCwy9pGHzce9xRfeTb0SDlj/jKTwePpEtJON6o+e/YpT52SNDxVnGLC7q9hm6KodezSpy/mAnImnlgVfrcUC5zR8OftCJS6oEPu74EwfDG8hB9uB5HmeJd/AP7h5XoTl1OpTePuODYFMdDZNxnBCHv+KayecE7btSq2vkvalOhr9MKo86SHLhjxw8c2pl83yj5Jd2p/bfcBpY99cCJZADXNYKYJbT6Vmfaaqtky4i5bPfaIIRzi6+QB5AvtVELkhXgjERpxfoAQV5Z1ETGXi0FMDVFxbWDLjS/DdoyiVFA8ojHz6GItzQ8/uy/u5imLVao8nlA+I7wt8urVUJe4AbuLrww/QReoy96Kst1P450EgrooqYBy6rSQeilbtIClMkaNcY9BRZXKZuMUgwgPyg5jL+eDB6nchSqr/n1MpHGhwBxVNX7RJm/K1DrLJdIleHU0pKQxR+zYJiOsZ2YokgWwo12pL+0J2gVzf9qAvstXFe4KYy8MU3xN0atcW9LL86QcW+ZnYBX6KdFqvPTGIK1SdIVhBCLw2l/6tGufVJlgzOxq6IRisgEliCBoDB8kDElslkCtE5yGmGVlyd70AY9R4OQC8HhHgxh5x959+PO33wPdy/epu/jP80c5jLNcwNrkcTn21CHylKRr/91uhC0cvez2PxEahd0Pk7aaWLGKGMU3BcjcaohAl15oH5aXn/RkHU5BtaWCjHxrlxlwJYoCp6UwaorJaj+9LP7Zxb2LYsYKBaoWtMVAWu2Xtt5cFXZIl6EDevdl10RTXckDfl5IycpBKY0rU+bDI/0Hi4fmer/4xquOO6ljg6M+AVI4fiupP07hoDjNb/QJVT5HOo7HEHmqTohSxiIWEv7bHnTmW2qQQIXI6MDE4d29Ecvqq8DiOCJO16GfciJUhZACAi42ef/l6bZefXMn/j1grdCd/nZHG3d/fWQVc69Zv8DrNO/VO+QQNvz1YFQyZVkfCRgNpIM4+bR+ikC+Ng9zA8zHmwiHDOtMUo1vcwQQos1DetzI2cWlHLNvm8jLQswXzIMlSH/FqAe+owQyVxjTREx1aVodBC/a8R9993YrzlSs4HEO/LRCOPg7XBascki7Yi1p6EAnBYQdKWJSdOqjFtU5GP/Uj+aHWjLfBKvlwqQ3ZCpgIGR1A4QB0vUiU7jTywqNzDv0uCT+UC+3kT5iaS+Xc8cGs+6fl88BQ6vkUsoWz6ryZ94TemtMgUc+6EAV0EIblNGVJRinK1tz1DotzQEEEJx+NrpLNVvzOj76728dR+l6BWGhMqSkg3mJfZ/PANIF4GLnpdAWjp2LPKXwdlkhJQGwNU2i8WSfEpdb4IcNm503DDZlwoavNEMObGSFwMKTainiIIEtWt62pldJ0vqOEIvhvE4vV3wc3VlWXePOU4/EOjsi/2RpjVL//xYW7GOLg7JPJ7l/Cl8wG+N3vJCyqV8zHdR8a5eauWFXhawBVehp8ncX3ZLigYCqTE7YDpQ193gpcP+FkvFBLGtWIzxV6N50Lb669OnkhI+bRv6VHufkyeetL3K+txlPEymvot+m+peJfzv4Skc3lt1bgN+sOcEOg53CoqN+KU9OWXIcEeHG06Rycw/hzhPyyw0lwISf5GH7QnZiyuVePfN0krbh+tgNaOfxdSSgq14SERjUoDa4tN4q/IAwg6iUO7ukl11/nGYnWYMWdKub4Zk0LmV3y6gPaOkZxiWa8i21VHYpjKbXam7wz1wQ7siIt5psP3lywm4qXwZfcx3KIM/9EXvrHgj7sg+UG8iTn07To7CriRnyfyjr/zrQOIBw/OupgY/pNnp6uu6KkXhpiABkcfglet2K679sRxNi+lDR5VrcRMojiUipLnJtZQZPhIjhsuu7hjV5ooOda4kUT5UwKr7OBgDDCHIJZr/rUpHOEKPZ2m2660QrB/TStoqqVs4+L2cNe1kwbW3z6Sosc1tnYQPHlbqqzVmxUy5jklTr/zEsUjhg4GBPoLuabMZrdT8rET/4foU+UDaUxC5r3RN8AJEVjBrzWlH4FcGVFZ6Lnx0pL114t86Hj2Y7BbIden6PyMN8Eh7NWPSXZ9LvIGm9eQGEFljeL2Zo9i+8bKmmkZB2TLnx6GpoLPtUW82NPRpczJUYK3OWrJWNr07ktFrYDV7oohMjHBPsDM5I+a6haY/yuHsfBVSXYU5fhMfrC3xQWkHiiJSuFtJadmbfqTliUu3IA5CR0GZ8n+Xgb9CNF+vbHqaNQxFIoDJ0+wPoB+zKhHmrk98GbMAnC77sxf1oPdKq8Dw/4NedI7fuTBx3nYzkAViwVV6bgD22i/1wqQsubgID1yEPID8vX8+Mj2gjG7x7d44e3Hk4pHU2b0Yvk2HQ5WUHYwEkoZlWp9Y9IpNh9FeqlMAlP96w53xfQ6gKeELXf9bFtUkjWg1+TflOinhAN389NulOUMoyQSkkZRwXwNyLb3CNdkXqBd1SgyqAKV27llOsR0WgCtVQXvNJaffdzK96z49MBMg5BaBey/qIK3AsCb2Hu6zFj6cy34CSwxBW+UP5MVZkaWE2RNaYmxE8Wq9SXb7G3VOBAMs/ZiPzL4aysdHsa9YRk+zBKEBPcRFDtOLu7/abs9ubKRwZXk3NuRYfjWj85XS4dCj+nDEXprBBbxxwCKWnfVrMwX0hn+tfNkJeSb2vlf1Tc/iH1aFY3zl8BBeEm1DGd0gU9CcPrmGJex3wNRoliMo2wU8IqDqjf/ztWO0M0Hy9ysrXRaDv/Ff66tce2BTSuOVgW3ePozqo2F7kbI4zncV0FbuPDkzeD7JLJYIYt+0uV3FDZZ3jtMwNX4So5NNjeI1QGRMNnzYse64z3019CYMz26eMgMzeBE1yksZsSVEnyq/vV/ACq5cK/xk7eTvH4bEjkITNBKTlbEe92yT+UjmbNg6P7w6IEUecVEkH/jMO9RyAsp9N+Z4nLYINhyC2h5heTvBKb4dyAGfFp2m/PMhL941EsbwqLtUSsp/nAi6r62bW/u1Ol+YXHxaQvQ9EB13MpthYkBmQiA4ZAl0C9ECqib8NBrK9LJqI2th4rtM8YMqbAB9Y1nmkOmJoYo9P6/apkAnolaGFgy1wrlhNdo6KTfqv2Hsfarc1msPGERXPGX1Euu7Hss/XzpWpHnvpM1goHVG5SwSb0GnrLyKTJqzT6awKpKW1VIHtmhkXBYXqlQ4T05QHpo1nchw6JMnHMNgk6MrtWNZ+3Q9+w/xLnq49Y4EM3CmkBjUCcOKwZ6KDfUGy7xQjOqZkThY4K9AwbzNreXtVXMxZLaZXq2oKghoDW0HV6k/4DK6HhBqAap0SI9ii0jjN3y8Tl1ndBZKJ0jl9kezqCX24QUT/NKSvb8iRNIX80mz+A5GGSx1peyaRQsW6pZhFAbukIrpKRPEDYnATHqiUYLhpDBF3cqMWSQpRxl2NQPY/Cis9rhI6GhlTGOhr1RwmbgKCDh3zR1KzpJCRpbW1OXnCJ1BtSvxIaEibMNEXUPw2gVP0LKGknKaYDoYVbEi3gyfulZFgHOsGWztfMZ9oRCOi1sHFXs5mQ3YgQ6j6C0yxYm83bFk037uEzP5GzQaWcia5Dd4C1SYr1a4S+UgC+1og5P46xQNIPJRp+L9KeyO+jFSYtOQXxLKl6oG6i26gHe8XBHaBfPATjxGS9wkl1kYKAbgMTS8QB/5WClqnaGILelYLQqLs0i6+irgL46ppe5f1FAesanZXym+xZgl6M8nRNltJRBdIZbecNmnBoOtyVlBHqeK276DeoFlInEfstKKE4sw4Qfow9I10G5I64yh4Trm0+Klr2jbGRs7TSQ4IsQw9F707u29T73nTt0zzG34UQzVoVgqQi97LmyX2u/smhPMn7p8KmehZzBMFEvuO1acUsyL6benfMCsEiwTr1V5cZjyXyZEv9nBMxpvXv6B9EgY3o7nI29u/e41r77sROpSHqNlEElme04JfvVQJ2xVDLBQyWjfTILG4pX3BsRg1dGmaKhmWT4xnXqqqslLPaIDYw/ArltdKl1LiSBaAxXgaAWvuUMATtNVMSbhz9QY7rz4UtEOySxP/BxCyOmYKAGvFAzG+dKlQSZ0cCgnnfFfVumyncMtlmpsmpc3WNmj5NukXxpzqom2yFIypFw5YebKY63T7ErFVuxvrmNbPrKsMAjhEgwr2AoaGNLg9IqN7TC1wiXGHerXnJF0RzB0SrK7sX1tu2mX84FN7asxCW3YZek3Xw1qNztgsh7/ECL3qcRl3uv1+XbVY8NS+T92ZT8CKqskjE3YPT/z2ScFiRmRSUfOn5mrhLy9DEx9OJCCznW3ev3GcC/Ak5WcxkXomDhFACxrgEYA3pbZgwB4Sm+EAXwi/7Nt5eh4wBWz8F1NnWa/spkVff7cYGt/ko1VpupKKiIbD5l9A5usAcuV8RnCJQqNnW09ag0t3bDy6nfw+vYdOrSXiHRBRBBEmQt+pThtFM2ydxk/PQ7U1K6VFol15uqQSsXXqXjL2XdQQ5ldmrJ2xvTW+WLb+1r4NZBH7Dok8Tv7ycLO1MhTQFFia79W1gZEmYj5HSJT48QFDQdCwBDpW6UKtDSSAi/FxBK37QYU9Pr+Ndmebz4y6GaQMGXbXeXsxfpCLx5cmYi/6pRluyK/Mk5AsiJPTnwMWBjpcEWQFLPgci372/nXs/jcyxf78qvyROM5LVbTFOL6STQUJwUE4+bfzcX679/9uzpIemQg7DW4bdO/mRXD4n9sOkroL50rVnxuV8jD+ywG0WNGMNtC6/qlt4sJQHo4zX9kTyivSGCVUfJ7ZcFBNTMxnPc9H5YjHB4Upg0s44+66cY7iLEtwv3DU04IHhzoPp1GyweOTIxtXuXKCrWPA86yJj1teBn1fEJB+p07ETW9nuqRPbvUhCaAL//TojvLjlEFk6YcBhyIx2V+Bt5q/qTzXpuaMWCF4B93o60lahH1VcZ1KogzTVTyCTJivMTx4NjsQ1a0P5g7xZAAUmgxit/VI49fwyc/c1GAgUwXcNMq1acK1KbaF9bEQ6YChUMclDF3waVD7Xv880knyawvyvNdkHSD+J8XQdN3o2onaX5/D0oWMX+MUDvONZTfJB9jhdmuYiYdKZs63nQmUvFwtIEiVfoAKCLnelECfAJUp6FNxHcfgAYe9A9Sqr/Mh5QdSxG+sfWuLXkVwrmoG2rkzZkeG+LjsdGkDdmVOQbFFUAnX+75xVm/yhTJOmbqC4ch78QjWIuZM8nDieClDIFmsaay+yOUxbDr0WLN9rRVms779qNAlE7TwfqQWLWC0pUlQgaULBHu1Hk/cLFvuMfTs2Fe/ojsFKMfg5HceWpYdq/cRW04+3iw71YVDXkWoH2cRIbsnlkJhfnGY5QHMudmIg82lxbS1NfU4aLP11r2VTqyrN2B0q9xv/rgqCtkNnNjynSF9GtKxrmrF8HvajFncC5dQKk9g69aEjdRZlFaQK6joc3MynIAAWH1glm67hC6AxGSUyL5gPgsXx5P9WUn2kW2FXp5vCM7L14uWkegDvmxzBBmqPIuxKxYEmXkYKfg9pl9nAqny7V/qRjsPi6d/AEvHh2lnqI8KQadydst3TDxlFQTAZjphPQn6VxpD6S8PNbJhHmVl4YwkY1LeEAOpvXIIsT/btRRxeplPme4s1I1ouNqkcD2UtUo6Nu8i8Z4dcGNoiO/oLJlU6LP/rPC0wRm5LKxrZBeRuTnxcjR5dDCHxj3dVggeAeGN3t0YUQ7ZEXjp8blakMk42P0VW7Z2elSAgomaVD83h25Mct9fvw1JQuhovuxcr9F9dOVAaxrnRRTxHpG5kvs/25Zn2Iad9h153r5R0cHGW/EOpKUIMTF2ebz5B6GzNXHNTpefsmxQ1EQfLr4r0jMfeT49MttIlG98bbjr5ny80QDy2CRaa4NeiIfqTBcVLys7Bj/CbNFS43hGRJ+5otY4BzB9v+pOAg86AXiPqb5E5M6r3JILe7gOG82zr32P5VDcVPxNbpqFtprtlFXWC8UIfvaIrZ38IU2cYksdn7xgSTub9KAVQT30X3voIm9yt3szZgNZJx1IyRLqtn21xsWwvUj0wkOXes0qmthfpn7tZDHm5LrfFX+bcCDNdp3ukRETCCRElgr1O8DXsXAAMH1XI65PxHlziqsbcl5I4P83t4rxE890GJqIiknDWdyT1C1ENY3xSw0BofyAVsp435g79zwpgsX4WYUsvcFLFgtMQU/msVJt/Xx8mE8B7+qW8rljozXzHAu3jI2YqisRSJ8ce+iHpqHYJm90flIwK0CRDpIZFeV8FR8m6J0+JvnezPVwS4h3wQkms6klddYQoghN6R/2uOC646k1+dNAc52IyOy+HM5rCpygSsL9seTt7vPWB8n6UtqKv/IsfVq5enxbgMq1qirPCvtL6bU0daOju7Q4HQLWH9sin5k0lRLK3h8Gems3QtEEyc0f+UDrO4RjlIwROoYp38/bIWNp2yq4TjJ7wmH/TZ+bygDoOvHc0CLQCqoNAnLQQOwFvj1lpimQ3n5fZbZQJo1GEZUioQtaKEszvMuonO+9u9CskS8kROZFNrp7MyJ1GgVvSFD8hJV0tjqkbogPcXa/wtYRaJRpo/o6lWCfFjfXoE63uIsNBU8I2tB594nrTiFPI4LgQzsOnAztBnhHYHs3mT6Y+KnUJMYwJAeQvAIn2gcLCejUGUA4ksyQk9um+1iN5EhHvYFIlUPuEGYNgW1ioJa+Obq0NtEK3sPdZV6J6WcsD+adf0/XIgrmhQcsxfE5SORIidB/d8SH10/Tbgj1QM3XCO+FunxRaOe773v0X4anrdBgxJ8AbQBcJcjMWS+fs7tc5UAxNNbe22njcIGig1IafPzjN2RCDkkVSDT0Rp+KHO/g8sSFnD1OeW2IY+HNgjX4sFDGomTYmhaItzWsfiuQNSgCN5TLDjLIW8UWiaKP0k7PFePFS/UB87hae83pEYLY+VsuujkcwzYrdcmxIGeOXlMgwUXSCK9t10sfxewZx4yhO0gP5xBNYcFxtqbFraAZWGiH0Q9DkoC8ycsVr+bVeARLVU2Gq2YTOklWwkoiFbi8YHg72mTs6GHhVXchNbBjL7QUw3Fgr7m/0L0uYPgjw/qEDJPhPftDKBqQtZn6Q26RxtiAjV9gJSJx67djBUQDwEFfZreNwLUpVIlNy/Q/J2RyKdLDa2JajrOp2R4ntTVZETBVooUtNWChpYHrlbU9V1z0w9WH4FEGPRxvqiuWBLSL4tJon7GcHWJx3+Q8OicBUa2556Uc+4j5xgOK0jkOQpCVFqshJoyzuzKnZW/AZALOUiKFxa9WVkThPXOWdt1aCIiBybsLelTb+MV+TvcDRi9bs5dt/SDhsdh7IrK6H3xy9d478XXY0Mcx939H5h2+TA4ivT6HW+cwlaPeUJOsckX62VDiSbnuIjd3HCwTNct2+vDgBb+xT/7rnrkfqOuni1V93u5OYNWmdM2wfdobFrk9cSog/bgue60s7qbMxnOnCGAWMSlb95jfdDnma+9uCJYBogdPv0x469N+ASMkQXJSKQqOvmEb4Gm1v0xboOU1pQMXq0BON8LhASW2QMsDqh+5Q28cJTE/LmXWa2B/GpXOcIffbRGFTNiPfcg439/9nbss7CSOdpUHhV5TcgnTvmNBlWrD8Sxy0WZNG2qNSsRITSSSWWj63AzjGcGUOIuJPf6wTMVaz/3V+u2V4MNzfRa5dzVehMxCjxsBOVCtT8a1LCd0Fou2g1bRR9WNjQrqgH0ayFjnmg7ua+o0ZR9LffunhNAq+RfZ1AsJvam2VY+jleITnA5a6/Rqw/fJwL/tX3Cda+qOwR76nA9y+zLSWw/csyo5w6S1KVvw96n4VnDwp0lYRRbPSCewUKvim/yl9j82nG80AcHtH9SR1rKrZIAWcW0xFraasU7aqXBCa1JHYZukCRVulXuRo4APsAXxwrlhcB07NG4xS5xu0Q5vOUWWTpm8M/qYnCxkzX4+Z4AyYoOlgX4HIVZiObKunH8QEJ5q4/KW+2r+oQeRuqmakB6uECjEoo2UxQZWIaM4ySMkSK/IslA4xf+KVpr1KXMl+2VtLAYl+5OyYVftFVaR4vZ4kJAXg/2KowJcR0999ai5lKpeQwu3Lh284kxgvxf8i8AyIOhIMhIDilnyRGErVVj48AHFnAzr0lnpgHXyt3xDit2Cj7Mxw58PKeo/jAE1/1VSRWiXWxeEv8Gcae2TKrVcIl9ZpPllw5ItCqLWS9TfzO0WmpKCTWIcZksqutoK2/B1RzVDY1WGfpZfUaPKgX/Jp/hTUJfN35wDQ8Eppfavzq4zIuais0O+S9pjv345Oe6/Yh6spTEG47xto1+gNVaSaIk05MTx0gpc4HqIkJI8zzwr6p2Rt74+yaa+JRyQzxzDOPXnijQpvNHGoFKviVMEcbhyZM9OIG7QsIl4JPJwiv6i9hFo1v1dz4CfzZv7+OU9tP8R35Ui+2UxG5707940YHeV2U6L47CvacErEp33NeKtpk6bQccg8xlmdzm1CCG6Cx4QQr0PFf2wyo0AEzF9Je3tC6J0C4XPmYYbJfLHDgiJkS7GpO2EIWU1w855gC3dmjsSLfZngbsi7yyQVKF31cZ2HKkkudNSjxF/JcIwloZ0qongnmLDOT0kcDJ/VFAnFSr2DvhyH3NxAT7DsAkQqFLTQVjRaD1ZyEvczyEXgl9lIA+PB3Wwgeerf+02Ume6i+WDXEx8/d4r8Y8fISkbCZfP6dgiU816lKi8gdyzVKjiE5B93agrhHjYyJypj8G2PaXRHcPPZtOaeFLAjLpNsiwKz7nYHrco7ZJUi/G6LHg8ShcW709XF0EU2JbBHox0DWsJySqZMOgGQRTIj+C7g1cWJPxzQ5uFwIt78dbFBN78xNDI/cUDr3A2bAyG6XqI4Gx6Q1nw7aZEf1zltbOiNfloXhtFKn8OmX+Qu9T2v7dQywswXIzvinqv32WCXQ82Too3DT1PD0pc5P192UDgOmbkuthXOL3qYdDO66OrPxnlV1B3C8E0VZ6oTua1RfUmdcs58wwrBK8jzNuc2bb4KSYkbjf95NyhVq5JDO5vq/jM+EbHQNsD6/BKFsEBwC5npZSRuhEPBkH3mWhOA1GAL3ROvwgjfUoDH4GRakxAZCca7X/T6bc6j4Ex+s1lROiNd1af/mOlasmBPtmKduL2tEWzh1/vopqxaIiymtMPBoiUjk8N/w9UJKee1zFnrupyU1lliaEsv4ycIeqPFjviHCRCPpSVOTmQvdungZ9oSuLpIOi1vqjeyy+IiOTkXNcCKYOrEEDMBz4+i005NEd5IePyVhQb1Bl5SkhEgHwO7pPsW96RJlMd2HmtWbXQ2VfAXx6olnugIIbFXhnS8jLPEcZQ9OaWOPa7f8GYuKsn+PnlKCEKVAISOnkVAMet/NI+pSIX7Jen70oKmX3wwof6CuniYn1FPiSvDCKXHirvEXDZLV9+NLeqA5uu1DtgQ3fQyyPhwaESCMdx7DvIsvuItyNWRJdadQZHxNnZ65YZu8j2/T2w2Xpp2fW7Ke1Zu3jFfAHW24w5M1iHZ70kxJNyNS6Drs2zk5i3E6HuEx9/a2e0ZqLSKwj2eFg3cIdQAFO52rYus83+2JWFuMY6cLiFoP5IFwZ36JnZqKZPPy5VrzGTAqejeCeiaHlXsZA7ydxykC/fnlBufokr/8cKJhiKv+tM7YDTTfduCu72cHyky9xnYDOpanUvIegUIiHu/i+WfyFWSzoSd/2EO4g/UjUk0G+vy52PcA9YtOLDkPU5R9TJ/nemAfi8BAsVN7ZQLNsLJGo5ItghQz57vAU6/7/ga5dlsWfrgGxzDbxdcD9klFLvWQTZl8fnFGmtaxbX6Mmdeo3Wlp6PY7HT4e52XbqR5hp5ZI+4BmFUwBg8omaqmMjL0TvHrcIASuFulxwEeola35dMfHyNBusI/ufer/GDzaT+fuLbcsd1NshprFCKtHDLvKS5CqNkOp5cxwZHIJPi+UqMHKtkb74Nrvhx3KdrvXaW6ORNMNT+a0oLfm4CLS/VblHAdtnUHsGYkHU5CH9GzQVSpZq3qaKWIbGGsvdDb5EFWD5+spLlDtvtMDdSpciFRTe57lM52rZ/X3+3M5pR52zU9T3tuekD/wJX29VYiWmwS1D/Jxdi0dDqSkXoJwc7ALlTYsI6VbY3gjGAfS6DOrKMtGc2Zw6C8Mw4jlfjndCRDKbapfimOI/FSKlZ8tes2rh6gGReMb5shVfR5TF0V4A/HrjCb7JkUSNZ/N9CLXlLkd1HR3o/rnVBk1OJeWt4gxgIjXbw71Fn/qJBDiIFwOWDmm+ZuMtNP8HA4LHy/2+2tr0jGaPFGuv/r3e/S44SeC8FZ82IuCgPolbF71K+8TeRQ7ol1dDf0P98EAWm8I3hZrHo5QRfq9tfYHYFpeEi9xeJxZ9ANWYSJQ/rwj5POu6yKNxTdjV1rTqYw5W7So52NyG/6sRf8w3MlVIS9sNHfzF5nDWEdED/5jN2UWiSZOQd0imfP" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_yellow" data-wow-delay="0.2s">
+            Strengthen the Security of Your Organisation's Cloud Services
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 20 Jan 2021</p>
+            <p>Updated on 09 Feb 2021</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <p style="margin-bottom: 0.0001pt;">Many organisations have adopted cloud-based IT services. With the proliferation of telecommuting, organisations may allow employees to use both personal and corporate devices to access cloud-based resources. Despite the use of security tools and cloud monitoring products, poor cyber hygiene and "Bring Your Own Device" (BYOD) policies may be exploited by threat actors to conduct attacks on organisations' cloud services. [1] </p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;">This advisory describes common causes of successful&nbsp;attacks against organisations' cloud services and provides recommended mitigations for organisations to strengthen their cloud environment configuration. In light of recent incidents related to the compromise of network monitoring products, organisations need to put in place adequate measures to&nbsp;monitor network traffic to cloud-based resources,&nbsp;strengthen their cloud environment configuration,&nbsp;and adopt good cyber hygiene measures to reduce the risk and impact&nbsp;of a possible cloud attack.&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><strong>Common Causes of Cloud Attacks</strong></p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">Phishing</span></p>
+<p style="margin-bottom: 0.0001pt;">Threat actors may use phishing emails with malicious links to harvest users&rsquo; cloud service account credentials. In some cases,&nbsp;these emails may look like the login page of a legitimate file hosting service.&nbsp;Upon&nbsp;gaining&nbsp;access&nbsp;to the victim's cloud service account, threat actors&nbsp;may send phishing emails to other accounts within the organisation. These emails may contain links to documents within what appears to be the&nbsp;organisations' file hosting service.&nbsp;Some threat actors may&nbsp;also obfuscate their identities&nbsp;by&nbsp;logging&nbsp;in to the victim's account via a <span style="color: #262626;">proxy</span> or <em><span style="color: #262626;">Tor</span></em>&nbsp;(software for anonymous web traffic).&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">Authentication Bypass</span></p>
+<p style="margin-bottom: 0.0001pt;">Threat actors can use stolen session cookies for authenticating to web applications and cloud-based services. This technique can bypass some multi-factor authentication (MFA) protocols since the session is already authenticated. This is also known as &ldquo;pass-the-cookie&rdquo; attack.&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;">Additionally, threat actors may attempt brute force logins on some accounts, using numerous username/password combinations&nbsp;to try and gain access to accounts.</p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">Modified Email Forwarding Rules</span></p>
+<p style="margin-bottom: 0.0001pt;">After gaining access to a user's cloud-based email account, threat actors may collect sensitive information by modifying or creating new email forwarding rules. Employees typically use email forwarding rules for forwarding work emails to their personal email accounts. To abuse/exploit this, threat actors may update the rules to forward&nbsp;emails to the threat actors' accounts. Moreover, threat actors may modify existing rules to enable keyword searching and cherry-pick emails that contain finance-related keywords within the emails' subject and body.</p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;">Some cloud-email providers may alert users to possible phishing emails. To circumvent this, threat actors can create new mailbox rules that forward their phishing emails to the Really Simple Syndication (RSS) Feeds or RSS Subscription folder, to prevent warnings from being seen by legitimate users.</p>
+<p style="margin-bottom: 0.0001pt;"><strong>&nbsp;</strong></p>
+<p style="margin-bottom: 0.0001pt;"><strong>Recommended Measures</strong></p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;">Organisations are recommended to adopt the following measures to strengthen their cloud security:</p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">Secure Users'&nbsp;Accounts</span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li style="margin-bottom: 0.0001pt;"><span>Implement and enforce MFA for all users&nbsp;to prevent brute-force logins.</span></li>
+    <li style="margin-bottom: 0.0001pt;"><span>Consider setting restrictions on email forwarding rules to prevent threat actors from modifying existing rules.&nbsp;All email forwarding rules and alerts&nbsp;should also be reviewed routinely.</span></li>
+    <li style="margin-bottom: 0.0001pt;"><span>Enable existing built-in filtering and detection products (for spam, phishing, malware, safe attachments and links), to thwart attempts to gain access via phishing.</span></li>
+    <li style="margin-bottom: 0.0001pt;"><span></span>Users should only allow&nbsp;app integrations that have been pre-approved by an administrator&nbsp;to protect sensitive data and assets.</li>
+</ul>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">Monitor Network Connections and Review System Logs</span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li><span>Verify that all cloud-based virtual machine instances with a public IP do not have open Remote Desktop Protocol (RDP) ports. Place systems with open RDP ports behind a firewall and allow users to access them only via a virtual private network (VPN).&nbsp;</span></li>
+    <li>Ensure that client site requests are resolved internally to your network.</li>
+    <li>Establish a baseline for normal network activity within your environment.</li>
+    <li>Enable user access logging and consider using a Security Information and Event Management appliance (SIEM) for aggregation and monitoring of logs to maintain visibility even after logging periods.</li>
+    <li>Routinely review both Active Directory sign-in logs and unified audit logs for unusual activity.</li>
+</ul>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">Implement Robust&nbsp;Security&nbsp;Policies</span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li style="margin-bottom: 0.0001pt;"><span>Use a trusted mobile device management solution to manage your BYOD policy.</span></li>
+    <li style="margin-bottom: 0.0001pt;"><span></span>Implement conditional access (CA) policies based upon your organisation's needs; conditional access should be understood and implemented with a zero-trust&nbsp;mindset. Zero trust assumes that users are not trusted based on their physical/network location. It is a response to recent trends including remote working, BYOD, and cloud-based assets that are not located within an enterprise-owned network boundary. As such, authorisation and authentication should be required when establishing a session to an organisation's resources.</li>
+    <li style="margin-bottom: 0.0001pt;">Use a CA policy to block legacy authentication protocols.</li>
+    <li style="margin-bottom: 0.0001pt;">Establish clear channels for employees to report suspicious cyber-activity or when they believe they have been a victim of a cyberattack.&nbsp;</li>
+</ul>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">Conduct Security Awareness Training</span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li><span>Employees should be aware of common threats (such as phishing), and how they are delivered.</span></li>
+    <li>Develop&nbsp;a mitigation plan&nbsp;and guide/drill employees on the&nbsp;procedures in place,&nbsp;and to understand when, how, and why to reset passwords and revoke session tokens.&nbsp;In the unlikely event that your organisation is affected by an attack, having a plan in place and exercising it will help the staff know what actions to take&nbsp;and respond to the attack swiftly.</li>
+</ul>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><strong>Additional Measures specific to your Cloud Platform</strong></p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;">Depending on the cloud technology your organisation is using, you may consider these additional measures.</p>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">For organisations using Microsoft 365</span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li style="margin-bottom: 0.0001pt;"><span>Limit the number of unsuccessful login attempts. Refer to Microsoft&rsquo;s documentation for instructions on how to configure these settings. [2][3]</span></li>
+    <li style="margin-bottom: 0.0001pt;"><span>Audit email rules with enforceable alerts via the&nbsp;Microsoft<em>&nbsp;<span style="color: #262626;">Security and Compliance Center</span></em> or other tools that use the <span style="color: #262626;"><em>Graph API</em>&nbsp;</span>to warn administrators of any unusual activity such as the forwarding of sensitive emails to suspicious email addresses.</span></li>
+    <li style="margin-bottom: 0.0001pt;">Disable PowerShell remoting to Exchange Online for regular Microsoft 365 users. Disabling this function for non-administrative users will lower the likelihood of a compromised user account being used to programmatically access tenant configurations for reconnaissance.</li>
+    <li style="margin-bottom: 0.0001pt;">Consider using open-source PowerShell-based tools such as <em><span style="color: #262626;">Sparrow</span></em> or <em><span style="color: #262626;">Hawk</span></em> to detect any unusual or malicious activities in your Microsoft 365 environment. [4][5]</li>
+    <li style="margin-bottom: 0.0001pt;">Assign one to three trusted users as electronic discovery (or eDiscovery) managers to conduct forensic content searches across the entire Microsoft 365 environment (Mailboxes, Teams, SharePoint, and OneDrive) for evidence of malicious activity.</li>
+</ul>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">For organisations using G Suite or Google Cloud Platform (GCP)</span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li style="margin-bottom: 0.0001pt;"><span>Use OAuth whitelisting to select third-party apps that&nbsp;can have access to your users' data across G Suite apps such as Gmail, Drive and Calendar. You may review third-party apps by examining the services requested by the app or checking for 'verified status'. Visit Google's&nbsp;<em><span style="color: #262626;">App Access Control</span></em>&nbsp;for more details. You may also consider some of <em><span style="color: #548dd4;"><span style="color: #262626;">G</span> <span style="color: #262626;">Suite's&nbsp;Best Practices for IT admins</span></span></em>. [6][7]</span></li>
+    <li style="margin-bottom: 0.0001pt;">Use&nbsp;<em><span style="color: #262626;">Early Phishing Detection</span></em>&nbsp;to warn users of suspicious emails.</li>
+    <li style="margin-bottom: 0.0001pt;">Enable the&nbsp;<em><span style="color: #262626;">unintended external reply warning</span></em>&nbsp;in Gmail to protect your organisation from an unintentional leak of internal data.</li>
+    <li style="margin-bottom: 0.0001pt;">Regularly review and update your Google Groups sharing permissions to ensure that all groups with sensitive information are kept private<em>.</em></li>
+    <li style="margin-bottom: 0.0001pt;">Use GCP Identity and Access Management (IAM) to control access by defining who has access to which resource and implement access based on a least-privilege principle. [8]</li>
+    <li style="margin-bottom: 0.0001pt;">Use GCP's advanced Virtual Private Cloud (VPC) features to monitor inbound and outbound network traffic. [9]</li>
+    <li style="margin-bottom: 0.0001pt;">Monitor API and other admin activity in&nbsp;<em><span style="color: #262626;">Stackdriver Admin Activity Logs</span></em>&nbsp;and data access activity in&nbsp;<em><span style="color: #262626;">Data Access Logs</span></em>. [10]</li>
+    <li style="margin-bottom: 0.0001pt;">Remove obsolete virtual machine images and ensure that the latest security patches have been installed to hosts within your environment.</li>
+</ul>
+<p style="margin: 0cm 0cm 0.0001pt 36pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><span style="text-decoration: underline;">For organisations with cloud services hosted on Amazon Web Services (AWS)</span></p>
+<ul style="margin-top: 0cm; list-style-type: disc;">
+    <li style="margin-bottom: 0.0001pt;"><span>Implement a robust password policy using AWS IAM. [11]</span></li>
+    <li style="margin-bottom: 0.0001pt;">Use MFA for Bucket Deletion and restrict access to <em><span style="color: #262626;">CloudTrail Bucket Logs</span></em>.</li>
+    <li style="margin-bottom: 0.0001pt;">Assign IAM Roles to <span style="color: #262626;"><em>EC2</em> </span>Instances. An assigned IAM role eliminates&nbsp;the need for applications&nbsp;to use AWS credentials when making API requests.</li>
+    <li style="margin-bottom: 0.0001pt;">Monitor and control inbound and outbound traffic by using AWS Security Groups, which acts as a virtual firewall. [12]</li>
+    <li style="margin-bottom: 0.0001pt;">If your server infrastructure requires more than one server, use Amazon&nbsp;VPC to define a private network for a group of servers.</li>
+</ul>
+<p style="margin-bottom: 0.0001pt;">&nbsp;</p>
+<p style="margin-bottom: 0.0001pt;"><strong>References</strong></p>
+<p><span>[1]<span style="white-space: pre;">	</span></span><a href="https://us-cert.cisa.gov/ncas/analysis-reports/ar21-013a" target="_blank" rel="noopener noreferrer">https://us-cert.cisa.gov/ncas/analysis-reports/ar21-013a</a></p>
+<p><span>[2]<span style="white-space: pre;">	</span></span>Password Smart Lockout: <a href="https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-smart-lockout" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-smart-lockout</a></p>
+<p><span>[3]<span style="white-space: pre;">	</span></span>Sign-in Activity Logs: <a href="https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins</a></p>
+<p><span>[4]<span style="white-space: pre;">	</span></span>Sparrow:&nbsp;<a href="https://github.com/cisagov/Sparrow" target="_blank" rel="noopener noreferrer">https://github.com/cisagov/Sparrow</a></p>
+<p><span>[5]<span style="white-space: pre;">	</span></span>Hawk:&nbsp;<a href="https://github.com/T0pCyber/hawk" target="_blank" rel="noopener noreferrer">https://github.com/T0pCyber/hawk</a></p>
+<p><span>[6]<span style="white-space: pre;">	</span></span>Google App Access control:&nbsp;<a href="https://support.google.com/a/answer/7281227" target="_blank" rel="noopener noreferrer">https://support.google.com/a/answer/7281227</a></p>
+<p><span>[7]<span style="white-space: pre;">	</span></span>G Suite Best practices:&nbsp;<a href="https://cloud.google.com/blog/products/g-suite/take-charge-your-oauth-ecosystem-these-best-practices" target="_blank" rel="noopener noreferrer">https://cloud.google.com/blog/products/g-suite/take-charge-your-oauth-ecosystem-these-best-practices)</a></p>
+<p><span>[8]<span style="white-space: pre;">	</span></span>GCP IAM:&nbsp;<a href="https://cloud.google.com/iam" target="_blank" rel="noopener noreferrer">https://cloud.google.com/iam</a></p>
+<p><span>[9]<span style="white-space: pre;">	</span></span>GCP VPC: <a href="https://cloud.google.com/vpc/docs/vpc" target="_blank" rel="noopener noreferrer">https://cloud.google.com/vpc/docs/vpc</a></p>
+<p><span>[10]<span style="white-space: pre;">	</span></span>GCP Logging:&nbsp;<a href="https://cloud.google.com/logging/docs/audit" target="_blank" rel="noopener noreferrer">https://cloud.google.com/logging/docs/audit</a></p>
+<p><span>[11]<span style="white-space: pre;">	</span></span>AWS IAM:&nbsp;<a href="https://aws.amazon.com/iam/" target="_blank" rel="noopener noreferrer">https://aws.amazon.com/iam/</a></p>
+<p><span>[12]<span style="white-space: pre;">	</span></span>AWS Security Groups:&nbsp;<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html" target="_blank" rel="noopener noreferrer">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html</a></p>
+<p><span>[13]<span style="white-space: pre;">	</span></span>AWS security tips:&nbsp;<a href="https://dzone.com/articles/25-aws-security-tips" target="_blank" rel="noopener noreferrer">https://dzone.com/articles/25-aws-security-tips</a></p>
+<p><span>[14]<span style="white-space: pre;">	</span></span>G Suite best practices:&nbsp;<a href="https://hiverhq.com/blog/g-suite-security" target="_blank" rel="noopener noreferrer">https://hiverhq.com/blog/g-suite-security</a></p>
+<p><span>[15]<span style="white-space: pre;">	</span></span>Google Cloud Security Tips:&nbsp;<a href="https://blog.paloaltonetworks.com/2019/04/8-google-cloud-security-best-practices" target="_blank" rel="noopener noreferrer">https://blog.paloaltonetworks.com/2019/04/8-google-cloud-security-best-practices/</a></p>
+<p>&nbsp;</p>
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 09 Feb 2021
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/advisories/ad-2021-001 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:27 GMT -->
+</html>

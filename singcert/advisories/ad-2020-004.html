@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/advisories/ad-2020-004 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	Fake Malicious Mobile Applications Imitating Contact-Tracing Applications
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/images/logo/singcert_600x422.png" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | Fake Malicious Mobile Applications Imitating Contact-Tracing Applications" />
+<meta property="twitter:title" content="CSA | SingCERT | Fake Malicious Mobile Applications Imitating Contact-Tracing Applications" />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/advisories/ad-2020-004" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/images/logo/singcert_600x422.png" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | Fake Malicious Mobile Applications Imitating Contact-Tracing Applications" />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/images/logo/singcert_600x422.png" />
+</head>
+<!-- body-->
+<body class="singcert singcert_advisories singcert_advisories_ad-2020-004">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/advisories/ad-2020-004" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_yellow" data-wow-delay="0.2s">
+            Fake Malicious Mobile Applications Imitating Contact-Tracing Applications
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 12 Jun 2020</p>
+            <p>Updated on 12 Jan 2021</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <p>Many countries are implementing contact tracing applications as they progressively move out of their lockdown phase. Threat actors are capitalising on such implementations to conduct malicious activities through fake mobile applications that imitate official COVID-19 contact tracing applications. These fake applications are usually embedded with trojans or malware that, when executed, could be used to monitor user's activities on the device and/or steal their personal data.</p>
+<br />
+<p>Users are recommended to adopt the following measures to avoid downloading fake and malicious applications to your mobile devices: </p>
+<ul style="margin-top: 0in; list-style-type: disc;">
+    <li style="margin: 0in 0in 0pt;"><span>Only download applications from the official Play Store (Android) and App Store (iOS).</span></li>
+    <li style="margin: 0in 0in 0pt;"><span>Check the developer information on the application listing. Only download applications developed and listed by the official developer.</span></li>
+    <li style="margin: 0in 0in 0pt;"><span>Pay attention to the security permissions required by the application and/or its privacy policy before downloading. Be wary of applications that ask for unnecessary permissions on your device.</span></li>
+    <li style="margin: 0in 0in 0pt;"><span>Look through the application&rsquo;s reviews, and be wary of poorly-reviewed applications. Multiple poor reviews or comments may be an indication of issues with the application.</span></li>
+</ul>
+&nbsp;
+<p>
+<br />
+Users who have downloaded applications from unofficial sources are recommended to delete them, and perform an anti-virus scan on their device(s) thereafter. In the event that users are unable to delete the application after it has been installed, they may wish to perform a factory reset on their device(s) to try to remove it. Users are reminded to do a backup of important data from the device(s) before proceeding to perform the factory reset. &nbsp;</p>
+<br />
+References:<br />
+<a rel="noopener noreferrer" href="https://support.tracetogether.gov.sg/hc/en-sg/articles/360050057093-10-June-2020-Android-APKs-impersonating-TraceTogether" target="_blank">https://support.tracetogether.gov.sg/hc/en-sg/articles/360050057093-10-June-2020-Android-APKs-impersonating-TraceTogether</a><br />
+<a rel="noopener noreferrer" href="https://www.anomali.com/blog/anomali-threat-research-identifies-fake-covid-19-contact-tracing-apps-used-to-monitor-devices-steal-personal-data" target="_blank">https://www.anomali.com/blog/anomali-threat-research-identifies-fake-covid-19-contact-tracing-apps-used-to-monitor-devices-steal-personal-data</a>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 12 Jan 2021
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/advisories/ad-2020-004 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:30 GMT -->
+</html>

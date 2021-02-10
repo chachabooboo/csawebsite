@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/publications/cloud-security by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	Cloud Security
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="description" content="With the upsurge of data created in the information age, it is no wonder that businesses and government institutions alike are scrambling to store data in cost-effective and secure ways. Meanwhile, new developments in cloud computing are promising big data storage capabilities without compromising the security of their contents. In this issue, we will explore the current landscape and challenges of cloud security, as well as tips for enterprises to adopt cloud infrastructure with robust security practices." />
+<meta name="twitter:description" content="With the upsurge of data created in the information age, it is no wonder that businesses and government institutions alike are scrambling to store data in cost-effective and secure ways. Meanwhile, new developments in cloud computing are promising big data storage capabilities without compromising the security of their contents. In this issue, we will explore the current landscape and challenges of cloud security, as well as tips for enterprises to adopt cloud infrastructure with robust security practices." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | Cloud Security" />
+<meta property="twitter:title" content="CSA | SingCERT | Cloud Security" />
+<meta property="og:description" content="With the upsurge of data created in the information age, it is no wonder that businesses and government institutions alike are scrambling to store data in cost-effective and secure ways. Meanwhile, new developments in cloud computing are promising big data storage capabilities without compromising the security of their contents. In this issue, we will explore the current landscape and challenges of cloud security, as well as tips for enterprises to adopt cloud infrastructure with robust security practices." />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/publications/cloud-security" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | Cloud Security" />
+<meta itemprop="description" content="With the upsurge of data created in the information age, it is no wonder that businesses and government institutions alike are scrambling to store data in cost-effective and secure ways. Meanwhile, new developments in cloud computing are promising big data storage capabilities without compromising the security of their contents. In this issue, we will explore the current landscape and challenges of cloud security, as well as tips for enterprises to adopt cloud infrastructure with robust security practices." />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/cybersense_social_600x315.png" />
+</head>
+<!-- body-->
+<body class="singcert singcert_publications singcert_publications_cloud-security">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/publications/cloud-security" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_blue" data-wow-delay="0.2s">
+            Cloud Security
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 02 Dec 2019</p>
+            <p>Updated on 02 Dec 2019</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <em>CyberSense is a monthly bulletin by CSA that spotlights salient cybersecurity topics, trends and technologies, based on curated articles and commentaries. CSA provides periodic updates to these bulletins when there are new developments.<br />
+<br />
+<br />
+</em><strong>OVERVIEW</strong><br />
+<br />
+With the upsurge of data created in the information age, the International Data Corporation (IDC) has estimated that the volume of data worldwide will grow to 175 zettabytes (or 175*10&sup2;&sup1; bytes) by 2025.<br />
+<br />
+<img width="1127" height="387" alt="IDC_DataSphere" src="../-/media/singcert/cybersense/IDC_DataSphere.png" /><br />
+<br />
+It is no wonder that businesses and government institutions alike are scrambling to store data in cost-effective and secure ways. Meanwhile, new developments in cloud computing are promising big data storage capabilities without compromising the security of their contents. In this issue, we will explore the current landscape and challenges of cloud security, as well as tips for enterprises to adopt cloud infrastructure with robust security practices.<br />
+<br />
+<strong>WHAT IS CLOUD SECURITY?</strong><br />
+<br />
+Cloud security refers to a set of policies, controls, applications and procedures that oversee the protection of cloud-based infrastructure. This includes the configuration of security measures for data protection, from identity management systems to ensuring physical and personnel security for the associated cloud services. Encryption policies to secure sensitive and important information - such as credit card numbers - also help to ensure customer privacy.<br />
+<br />
+Ideally, cloud security should be carefully customised for each individual cloud infrastructure, tailored specifically to meet the needs of the business. Theoretically, the main benefit that cloud security confers to businesses is security centralisation; as cloud security rules are configured and managed centrally, administration overheads are reduced due to the streamlining of processes and consolidation in the monitoring of network events. Additionally, it removes the need to manually install software updates and patches across multiple different systems, ensuring that each system has the most up-to-date security features to fend off cyber threats.<br />
+<br />
+Read more at <a href="https://www.forcepoint.com/cyber-edu/cloud-security"><span style="text-decoration: underline;">Forcepoint</span></a>.<br />
+<br />
+<strong>REPORTS</strong><br />
+<br />
+<strong><span style="text-decoration: underline;">CURRENT LANDSCAPE FOR CLOUD SECURITY</span></strong><br />
+<br />
+A key question with regard to storage is whether storing data in on-premise (on-prem) servers safer than in the cloud? Whichever side you might be on, an increasing number of businesses, institutions, and even government agencies have been storing data in the cloud, given recent technological advancements that have made cloud infrastructure a much more cost-effective (and some say, safer) choice than storing data on-prem.<br />
+<br />
+The current cloud landscape is dominated by the &lsquo;Big Three&rsquo; cloud service providers:<br />
+<br />
+<ol>
+    <li>Amazon Web Services (AWS) AWS currently holds the data of the US federal government, with a contract worth US$10 billion signed in August 2018. The company has successfully met the prerequisites laid out in the Security Requirements Guide from the Department Of Defense (DOD), meeting the US government&rsquo;s standard and obtaining DOD&rsquo;s authorisation for secure classified data storage. In addition, AWS has hosted classified data from the Central Intelligence Agency (CIA) since July 2014; it has also developed a US$600 million computing cloud to service all 17 agencies that comprise the US intelligence community. These agencies will be able to tap on a suite of on-demand computing and analytic services from the CIA and National Security Agency, bridging intelligence gaps and sharing critical information.</li>
+    <br />
+    <li>Microsoft Azure Microsoft Azure hosts 95% of the Fortune 500 companies&rsquo; data wholly or in part, and invests some US$1 billion per year in security to protect customers&rsquo; data. According to Azure&rsquo;s 4-part blog post series, the platform&rsquo;s security is derived from a secure network infrastructure that isolates management and customer networks, coupled with privileged access workstations that only allow user access on a &lsquo;needs&rsquo; basis. Azure also boasts state-of-the-art hardware and firmware, and has over 200 cybersecurity professionals actively conducting vulnerabilities testing through red and blue team exercises.</li>
+    <br />
+    <li>Google Cloud Platform (GCP) The smallest of the &lsquo;Big Three&rsquo;, Google Cloud Platform has nevertheless been growing rapidly, winning lucrative deals and adding notable companies such as Spotify, Twitter, Snapchat, HSBC, Coca Cola and Ubisoft to its platform (largely at the expense of AWS). In 2018, archrivals Apple also acknowledged that it was using Google&rsquo;s public cloud for its iCloud storage service. All data is encrypted in transit between Google, its customers, and data centers by default. Google has also consistently kept up with the latest enterprise security standards and certifications such as ISO 27001 (Managing information risks), ISO 27017 (Controlling cloud-based information security) and ISO 27018 (Protecting Personal Data).</li>
+    <br />
+    <img class="responsive;" alt="Top 3 Cloud Providers" src="../-/media/singcert/cybersense/Cloud_Providers.png" /><br />
+    <br />
+    Read more at <a href="https://medium.com/faun/the-current-state-of-cybersecurity-in-the-cloud-cf996b69c31a"><span style="text-decoration: underline;">Medium</span></a>, <a href="https://aws.amazon.com/security/"><span style="text-decoration: underline;">AWS</span></a>, <a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/overview"><span style="text-decoration: underline;">Azure</span></a> and <a href="https://cloud.google.com/security/overview/whitepaper"><span style="text-decoration: underline;">Google</span></a>.<br />
+    <br />
+    <strong>GROWING CONCERNS FOR CLOUD SECURITY</strong><br />
+    <br />
+    Concerns over cloud security have grown in tandem with the adoption of cloud computing services. In 2016, the Cloud Security Alliance released a report that provided an overview of the 12 major security issues (dubbed &ldquo;The Treacherous 12&rdquo;) faced in cloud computing:<br />
+    <br />
+    <ol>
+        <li>Data Breaches</li>
+        <li>Weak Identity, Credential and Access Management</li>
+        <li>Insecure APIs</li>
+        <li>System and Application Vulnerabilities</li>
+        <li>Account Hijacking</li>
+        <li>Malicious Insiders</li>
+        <li>Advanced Persistent Threats (APTs)</li>
+        <li>Data Loss</li>
+        <li>Insufficient Due Diligence</li>
+        <li>Abuse and Nefarious Use of Cloud Services</li>
+        <li>Denial of Service</li>
+        <li>Shared Technology Issues</li>
+    </ol>
+    <br />
+    Other than highlighting these key security issues, the report also suggested that the latter form a frame for cloud users and providers to develop mitigation measures and controls for managing cloud security risks. These top cloud computing threats should also factor into the research priorities of cybersecurity agencies.<br />
+    <br />
+    Read more at <a href="https://cloudsecurityalliance.org/articles/cloud-security-alliance-releases-the-treacherous-twelve-cloud-computing-top-threats-in-2016/"><span style="text-decoration: underline;">Cloud Security Alliance</span></a>.<br />
+    <br />
+    <strong>IDENTIFIED CLOUD SECURITY VULNERABILITIES</strong><br />
+    <br />
+    There have also been a number of well-documented security vulnerabilities on the Big Three clouds as well as other smaller service providers, implying that cloud security has still some way to go in keeping up with cyber threats:<br />
+    <br />
+    <ol>
+        <li>It was reported in June 2019 that a hacking group &lsquo;APT10&rsquo; had been running a large-scale and sustained global cyber espionage campaign called &lsquo;Operation Cloud Hopper&rsquo; over the past few years. The APT group targeted tech and manufacturing firms through their cloud service providers via spear phishing attacks, to steal sensitive intellectual property and technologies</li>
+        <br />
+        <li>In 2016, an Amazon S3 server owned by Deep Root Analytics, a US-based marketing firm, was found to have exposed the personal details of over 198 million US voters due to a misconfiguration. Anyone with an Internet connection who guessed Deep Root Analytics Amazon subdomain &ldquo;dra-dw&rdquo; could view these records, and more than a terabyte of private information was exposed without even the most basic security precautions such as a password.</li>
+        <br />
+        <li>In Sept 2017, Accenture, one of the world&rsquo;s largest consulting firms (that also comprised a cybersecurity division), was discovered to have left at least four cloud storage Amazon S3 buckets unsecured and configured for public access, exposing secret API data and decryption keys, authentication credentials, and customer information. According to an Australian cybersecurity agency UpGuard, this cloud leak had a CSTAR cyber risk score (a score rating that helps businesses measure the risk of data breaches due to misconfigurations and software vulnerabilities) of 790 out of a possible 950, showing that even some of the largest companies in the world are still susceptible to making basic errors in cloud security settings.</li>
+    </ol>
+    <br />
+    Read more at <a href="https://www.ft.com/content/4f990a78-537a-11e8-84f4-43d65af59d43"><span style="text-decoration: underline;">Financial Times</span></a> and <a href="https://www.upguard.com/breaches/the-rnc-files"><span style="text-decoration: underline;">UpGuard</span></a>.<br />
+    <br />
+    <strong>KEY TAKEAWAY: CLOUD SECURITY IS A SHARED RESPONSIBILITY</strong><br />
+    <br />
+    Cloud security is a shared responsibility between the cloud provider, business and the user. While Cloud providers such as AWS, Azure and Google Cloud offer deep technologies in cloud security, the business owner and end users must also be responsible in securing their own data. In fact, the latest reports from Cyber Security Alliance have further identified an &ldquo;Egregious 11&rdquo; cloud security issues, suggesting that traditional system vulnerabilities as brought forward in the previous &ldquo;Treacherous 12&rdquo; have since taken a backseat. Instead, these &ldquo;Egregious 11&rdquo; cloud security focused largely on concerns regarding the business owner and the user themselves, citing user misconfigurations of the cloud server, insider threats and the lack of enforcement in cloud security policies.<br />
+    <br />
+    Read more at <a href="https://www.zdnet.com/article/cloud-security-is-too-important-to-leave-to-cloud-providers/"><span style="text-decoration: underline;">ZDNet</span></a>.<br />
+    <br />
+    <strong>SOURCES INCLUDE: </strong>Forcepoint, AWS, Azure, Google Cloud Services, Medium, ZDNet, Cloud Security Alliance, Financial Times, UpGuard</ol>
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 02 Dec 2019
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/publications/cloud-security by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:40 GMT -->
+</html>

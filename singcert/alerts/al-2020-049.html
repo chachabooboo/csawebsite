@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- html head-->
+
+<!-- Mirrored from www.csa.gov.sg/singcert/alerts/al-2020-049 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- meta-->
+    <title>
+	Active Exploitation of Vulnerability in SolarWinds Orion Platform
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icons-->
+    <link rel="apple-touch-icon" href="../../html/Singcert/images/common/favicon.ico" /><link rel="icon" href="../../html/Singcert/images/common/favicon.ico" />
+    <!-- stylesheets-->
+    <link rel="stylesheet" href="../../html/Singcert/css/style.1.3.2.css" type="text/css" />
+<script src="../../../assets.wogaa.sg/scripts/wogaa.js"></script>   
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-596S74V');
+    </script>
+    <!-- End Google Tag Manager -->
+<meta name="description" content="SolarWinds has issued a security advisory to address a &quot;highly sophisticated supply chain attack&quot; on its Orion Platform. There are reports of active exploits taking place." />
+<meta name="twitter:description" content="SolarWinds has issued a security advisory to address a &quot;highly sophisticated supply chain attack&quot; on its Orion Platform. There are reports of active exploits taking place." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/alert.jpg" />
+<meta name="twitter:site" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:title" content="CSA | SingCERT | Active Exploitation of Vulnerability in SolarWinds Orion Platform" />
+<meta property="twitter:title" content="CSA | SingCERT | Active Exploitation of Vulnerability in SolarWinds Orion Platform" />
+<meta property="og:description" content="SolarWinds has issued a security advisory to address a &quot;highly sophisticated supply chain attack&quot; on its Orion Platform. There are reports of active exploits taking place." />
+<meta property="og:url" content="https://www.csa.gov.sg/singcert/alerts/al-2020-049" />
+<meta property="og:image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/alert.jpg" />
+<meta property="og:site_name" content="The Singapore Computer Emergency Response Team" />
+<meta property="og:type" content="Website" />
+<meta itemprop="name" content="CSA | SingCERT | Active Exploitation of Vulnerability in SolarWinds Orion Platform" />
+<meta itemprop="description" content="SolarWinds has issued a security advisory to address a &quot;highly sophisticated supply chain attack&quot; on its Orion Platform. There are reports of active exploits taking place." />
+<meta itemprop="image" content="https://www.csa.gov.sg/singcert/-/media/singcert/social_media_meta_images/alert.jpg" />
+</head>
+<!-- body-->
+<body class="singcert singcert_alerts singcert_alerts_al-2020-049">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-596S74V"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://www.csa.gov.sg/singcert/alerts/al-2020-049" id="formInner">
+<div class="aspNetHidden">
+<input type="hidden" name="RadScriptManager1_TSM" id="RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['formInner'];
+if (!theForm) {
+    theForm = document.formInner;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../../WebResource3984.js?d=pynGkmcFUV13He1Qd6_TZC6E1Jc2ic-92jJIZdSB2QhI7OcvOr7KU5-VoqIL_KjqKJMTCoJcHDZtWEBXcQXezg2&amp;t=637353266110221559" type="text/javascript"></script>
+
+
+<script src="../../Telerik.Web.UI.WebResource565a.js?_TSM_HiddenField_=RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a388bfbd4-0ace-4097-bb89-303d009ab8b7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="48FEF4D9" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('RadScriptManager1', 'formInner', [], ['RadScriptManager1','RadScriptManager1'], [], 90, '');
+//]]>
+</script>
+<input type="hidden" name="RadScriptManager1" id="RadScriptManager1" />
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.setServerId("RadScriptManager1", "RadScriptManager1");
+Sys.Application._enableHistoryInScriptManager();
+//]]>
+</script>
+
+        <!-- header-->
+        <header>
+            <div class="sgds-masthead">
+                <div id="singcertplaceholdermasterhead_0_DivCode">
+    <div class="sgds-masthead-container"><a href="https://www.gov.sg/" target="_blank" rel="noopener">
+            <div class="sgds-masthead-wrap"><span class="sgds-masthead-icon icon-icon-sgds"></span><span class="sgds-masthead-text">A Singapore Government Agency Website</span></div></a></div>
+<style>
+
+/* force links to break if not enough space */
+.sc-detail-content a {
+    word-wrap:break-word;
+} 
+
+/* spacing fix for nav menu dropdown */
+.sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    min-width: 150px;
+}
+
+/* line height for singcert list page (e.g. alerts, advisories, publications) descriptions*/
+#readable #singcertplaceholdercontent_0_DivCode .sc-innerpage #singcertplaceholdercontent_0_UpdatePanel .sc-page-headline .sc-page-headline-subtitle {
+    line-height: 2em;
+}
+
+/* adjust text spacing for cyber-aid (dynamic reporting form) */
+.item-answer .sc-answer-desc p {
+    width: 80%;
+    margin: auto auto 40px;
+    min-width: 260px;
+}
+
+/* adjust padding for cases when the button text is very long */
+.sc-button {
+    padding: 10px 25px;
+}
+
+@media (max-width: 1024px) {
+    /* fix spacing for mobile nav items with dropdown */
+    .sc-headnav .hasSubMenu-arrow {
+        position: absolute;
+        top: 11px;
+    }
+
+    /* remove padding for dropdown items on mobile view */
+    .sc-headnav .hasSubMenu:hover>.sc-headnav-menu-lv2 {
+        padding: 0;
+    }
+}
+
+
+
+</style>
+    
+</div>
+
+
+
+            </div>
+            <nav class="sc-headnav wow fadeIn">
+                <div class="sc-container">
+                    <div class="sc-headnav-wrap">
+                        <div id="singcertplaceholderheader_0_DivCode">
+    <div class="sc-headnav-logo wow fadeIn" data-wow-delay="0.2s">
+<a href="../../singcert.html">
+<img alt="" src="../-/media/singcert/images/logo/SingCERT_Logo_New.svg" />
+</a>
+</div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_1_DivCode">
+    <div class="sc-headnav-navigation">
+        <div class="sc-headnav-close"></div>
+        <div class="sc-headnav-search">
+            <div class="sc-headnav-search-wrap">
+                <input class="search-field" type="text" placeholder="Search Keywords" aria-label="searchOnMeToo">
+                <button aria-label="submitSearch" id="sBtn2"></button>
+            </div>
+        </div>
+        <ul class='sc-headnav-menu wow fadeIn' data-wow-delay='0.6s'><li class='sc-hide-desktop'><a href='../../singcert.html'>Home</a></li><li><a href='../who-we-are.html'>Who We Are</a></li><li><a href='../alerts.html'>Alerts</a></li><li><a href='../advisories.html'>Advisories</a></li><li><a href='../publications.html'>Publications</a></li><li><a href='../resources.html'>Resources</a></li><li><a href='../reporting.html'>Need Help?</a></li><li class='sc-hide-desktop'><a href='../content/contact-us.html'>Contact Us</a></li><li class='sc-hide-desktop'><a href='https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5'>Feedback&nbsp;</a></li><li class='sc-hide-desktop'><a href='https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx'>FAQ&nbsp;</a></li></ul>
+    </div>
+</div><div id="singcertplaceholderheader_2_DivCode">
+    <div class="sc-headnav-icon wow fadeIn" id="searchTrigger" data-wow-delay="0.8s"></div>
+    
+</div>
+
+
+<div id="singcertplaceholderheader_3_DivCode">
+        <div class="sc-headnav-bar wow fadeIn" data-wow-delay="0.4s">
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+        <div class="sc-headnav-bar-stripe"></div>
+    </div>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <div class="sc-headsearch">
+                <div id="singcertplaceholdersearchbar_0_DivCode">
+            <div class="sc-container">
+          <div class="sc-headsearch-wrap">
+            <div class="sc-headsearch-icon"><img src="../../html/singcert/img/magnify.svg" alt="icon search" id="searchOnMe" /></div>
+            <div class="sc-headsearch-input">
+              <input class="search-field" type="text" id="inputQuery" placeholder="search within this service" aria-labelledby="searchOnMe" />
+            </div>
+            <div class="sc-headsearch-submit">
+              <button id="sBtn1">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    
+</div>
+
+
+
+            </div>
+        </header>
+        <!-- page main-->
+        <main role="main">
+            
+            <div class="sc-container">
+                
+
+
+<script type="text/javascript">
+    window.rsConf = { params: '/html/ReadSpeaker/ReadSpeaker.js?pids=embhl' };
+</script>
+
+<div style="clear:both" class="clear">
+    <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve" data-intro="Listen to this page using the text-to-speech tool" data-step="1">
+        <a id="singcertplaceholderreadspeaker_0_anchReadSpeaker" rel="nofollow" class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker">
+            <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+            <span class="rsbtn_right rsimg rsplay rspart"></span>
+        </a>
+    </div>
+</div>
+
+<script src="../../html/ReadSpeaker/ReadSpeakerc4a4.js?pids=embhl" type="text/javascript"></script>
+
+<script class="rs_skip">
+	var readSpeakerLink = "https://app-as.readspeaker.com/cgi-bin/rsent?customerid=7942&amp;lang=en_au&amp;readid=readable&amp;url=" + window.location.href;
+	var rsbtn = document.getElementsByClassName("rsbtn_play")[0];
+	
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		rsbtn.setAttribute("href", "");
+	});
+	
+	rsbtn.addEventListener("click", function () {
+		rsbtn.setAttribute("href", readSpeakerLink);
+		setTimeout(function () {
+			rsbtn.setAttribute("href", "");
+		}, 30000);
+	});
+
+	window.rsConf = {
+		general: {
+			usePost: true,
+			cookieLifetime: null
+		},
+		cb: {
+			ui: {
+				stop: function () {
+					rspkr.ui.getActivePlayer() && rspkr.ui.getActivePlayer().close();
+				}
+			}
+		}
+	};
+</script>
+
+
+                <div class="sc-inner-container" id="readable">
+                    
+                    <div id="singcertplaceholdercontent_0_DivCode">
+    <div class="sc-detail">
+        <h1 id="singcertplaceholdercontent_0_PageTitle" class="sc-detail-title wow fadeIn sc-detail-title_red" data-wow-delay="0.2s">
+            Active Exploitation of Vulnerability in SolarWinds Orion Platform
+        </h1>
+        <div class="sc-detail-published wow fadeIn" data-wow-delay="0.3s">
+            <p>Published on 14 Dec 2020</p>
+            <p>Updated on 23 Dec 2020</p>
+        </div>
+        <div class="sc-detail-content wow fadeIn" data-wow-delay="0.4s">
+            <p style="margin-bottom: 12pt;">
+SolarWinds has issued a security advisory to address a "highly sophisticated supply chain attack" on its Orion Platform. There are reports of active exploits taking place. Many organisations have been affected globally, including reputed cybersecurity and technology companies such as FireEye, Microsoft and Cisco.<br />
+<br />
+Successful exploitation of the vulnerability could allow attackers to gain access to vulnerable servers and perform malicious activities. Microsoft also observed that attackers abused their access by forging authentication tokens and impersonating existing users/administrators to evade detection.</p>
+<p style="margin-bottom: 12pt;">Administrators are advised to disconnect or power down SolarWinds Orion products (running versions 2019.4 through 2020.2 HF1) from their network immediately. Administrators should also review the logs for suspicious activities, check connected systems for signs of compromise and persistence mechanisms, and reset credentials if necessary, especially ones used by or stored in SolarWinds software. Administrators are also advised to monitor their networks and systems for any suspicious activities.<br />
+<br />
+SolarWinds has released a hotfix, Orion Platform version 2020.2.1 HF 2, to address the vulnerability. Administrators are advised to apply the hotfix as soon as possible.<br />
+<br />
+Enterprises using products or services from affected technology companies should refer to the respective companies&rsquo; websites for updates and recommended actions. Administrators are encouraged to visit these sites regularly to check for updates.</p>
+<p style="margin-bottom: 12pt;"><span>SolarWinds Resources:</span><br />
+<a rel="noopener noreferrer" href="https://www.solarwinds.com/securityadvisory" target="_blank">https://www.solarwinds.com/securityadvisory</a><br />
+<a rel="noopener noreferrer" href="https://www.solarwinds.com/certadvisory" target="_blank">https://www.solarwinds.com/certadvisory</a><br />
+<a rel="noopener noreferrer" href="https://www.solarwinds.com/securityadvisory/faq" target="_blank">https://www.solarwinds.com/securityadvisory/faq</a><br />
+<a rel="noopener noreferrer" href="https://investors.solarwinds.com/financials/sec-filings/default.aspx" target="_blank">https://investors.solarwinds.com/financials/sec-filings/default.aspx</a><br />
+<a rel="noopener noreferrer" href="https://orangematter.solarwinds.com/2020/12/17/solarwinds-update-on-security-vulnerability/" target="_blank">https://orangematter.solarwinds.com/2020/12/17/solarwinds-update-on-security-vulnerability/</a></p>
+<p style="margin-bottom: 12pt;"><span>More information is available here:<br />
+<a rel="noopener noreferrer" href="https://www.fireeye.com/blog/products-and-services/2020/12/global-intrusion-campaign-leverages-software-supply-chain-compromise.html" target="_blank">https://www.fireeye.com/blog/products-and-services/2020/12/global-intrusion-campaign-leverages-software-supply-chain-compromise.html</a><br />
+<a rel="noopener noreferrer" href="https://blogs.microsoft.com/on-the-issues/2020/12/13/customers-protect-nation-state-cyberattacks/" target="_blank">https://msrc-blog.microsoft.com/2020/12/13/customer-guidance-on-recent-nation-state-cyber-attacks/</a><br />
+<a rel="noopener noreferrer" href="https://blog.talosintelligence.com/2020/12/solarwinds-supplychain-coverage.html" target="_blank">https://blog.talosintelligence.com/2020/12/solarwinds-supplychain-coverage.html</a><br />
+<a rel="noopener noreferrer" href="https://cyber.dhs.gov/ed/21-01/" target="_blank">https://cyber.dhs.gov/ed/21-01/</a><br />
+<a rel="noopener noreferrer" href="https://us-cert.cisa.gov/ncas/alerts/aa20-352a" target="_blank">https://us-cert.cisa.gov/ncas/alerts/aa20-352a</a></span></p>
+        </div>
+    </div>
+    
+</div>
+
+
+
+                </div>
+            </div>
+        </main>
+        <!-- footer-->
+        <footer class="sc-footer">
+            <div class="sc-container">
+                <div class="sc-footer-top">
+                    <div id="singcertplaceholdercsaitem_0_DivCode">
+    <h5 class="sc-footer-top-title">Cyber Security Agency of Singapore</h5>
+    <div class="sc-footer-top-row">
+        <div class='sc-footer-top-col'><p class='bolder'>Who We Are </p><p><a href='../../who-we-are/our-organisation.html'>Our Organisation</a></p><p><a href='../../who-we-are/mission-vision-values.html'>Mission, Vision and Values </a></p><p><a href='../../who-we-are/corporate-logo.html'>Corporate Logo</a></p><p><a href='../../Content/contact-us.html'>Contact Us</a></p></div><div class='sc-footer-top-col'><p class='bolder'>News</p><p><a href='../../news/press-releases.html'>Press Releases</a></p><p><a href='../../news/news-articles.html'>News Articles</a></p><p><a href='../../news/publications.html'>Publications</a></p><p><a href='../../news/speeches.html'>Speeches</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Legislation</p><p><a href='../../legislation/cybersecurity-act.html'>Cybersecurity Act</a></p><p><a href='../../legislation/codes-of-practice.html'>Codes of Practice</a></p><p><a href='../../legislation/forms.html'>Forms</a></p><p><a href='../../legislation/notices.html'>Notices</a></p><p><a href='../../legislation/supplementary-references.html'>Supplementary References</a></p><p><a href='../../legislation/whistleblowing.html'>Whistleblowing</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Programmes</p><p><a href='../../programmes/csa-common-criteria/about.html'>CSA Common Criteria</a></p><p><a href='../../programmes/csat.html'>CSAT Programme</a></p><p><a href='../../programmes/cybersecurity-labelling/about-cls.html'>Cybersecurity Labelling Scheme</a></p><p><a href='../../programmes/cybersecurity-career-mentoring-programme.html'>Cybersecurity Career Mentoring Programme</a></p><p><a href='../../programmes/co-innovation-development-fund.html'>Cybersecurity Co-innovation and Development Fund</a></p><p><a href='../../programmes/ice71.html'>ICE71</a></p><p><a href='../../programmes/psg-cybersecurity-solutions.html'>PSG Cybersecurity Solutions</a></p><p><a href='../../programmes/sgcybertalent/about.html'>SG Cyber Talent</a></p></div><div class='sc-footer-top-col'><p class='bolder'>Careers</p><p><a href='../../careers/overview.html'>Overview</a></p><p><a href='../../careers/working-in-csa.html'>Working in CSA</a></p><p><a href='../../careers/how-we-recruit.html'>How We Recruit</a></p><p><a href='../../careers/job-opportunities.html'>Job Opportunities</a></p><p><a href='../../careers/internships.html'>Internships</a></p><p><a href='../../careers/scholarships.html'>Scholarships</a></p></div><div class='sc-footer-top-col'><p class='bolder'><a href='../../singcert.html' target="_blank">SingCERT</a></p><p class='bolder'><a href='../../gosafeonline.html' target="_blank">Gosafeonline</a></p></div>
+    </div>
+</div>
+
+                </div>
+                <div class="sc-footer-btm">
+                    <div id="singcertplaceholderfootertop_0_DivCode">
+    <div class="sc-footer-btm-share">
+  <ul class="sc-footer-btm-share-links">
+    <li><a href="../content/contact-us.html">Contact Us</a></li>
+    <li><a href="https://form.gov.sg/#!/5d3e5580c90d0b0012c329a5">Feedback&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+    <li><a href="https://www.ifaq.gov.sg/csa/apps/fcd_faqmain.aspx">FAQ&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  </ul>
+  <ul class="sc-footer-btm-share-social">
+    <li><a class="fa fa-facebook" href="https://www.facebook.com/CSAsingapore" target="_blank" rel="noopener" aria-label="facebook"></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/csasingapore" target="_blank" rel="noopener" aria-label="twitter"></a></li>
+    <li><a class="fa fa-rss" href="../../Content/RSS-Feeds.html" aria-label="rss"></a></li>
+  </ul>
+</div>
+    
+</div>
+
+
+
+                    <div class="sc-footer-btm-nav">
+                        <div class="sc-footer-btm-nav-link">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <div class="sc-footer-btm-nav-link" style="width: auto">
+                            <div id="singcertplaceholderfooterbottom_0_DivCode">
+    <ul>
+  <li><a href="https://www.tech.gov.sg/report_vulnerability" rel="noopener" target="_blank">Report Vulnerability&nbsp;<i class="mx-1 icons fa fa-share-square desktop-version"></i></a></li>
+  <li><a href="../../Content/PrivacyStatement.html" rel="noopener" target="_blank">Privacy Statement</a></li>
+  <li><a href="../../Content/TermsOfUse.html" rel="noopener" target="_blank">Terms of Use</a></li>
+  <li><a href="../../Content/rate-this-website.html" rel="noopener" target="_blank">Rate This Website</a></li>
+  <li><a href="../content/sitemap.html" rel="noopener" target="_blank">Sitemap</a></li>
+</ul>
+    
+</div>
+
+
+
+                        </div>
+    
+</div>
+
+
+
+                        </div>
+                        <div class="sc-footer-btm-nav-copy">
+                            <div id="singcertplaceholdercopyright_0_DivCode">
+    <p>© 2020, Government of Singapore</p>
+    
+</div>
+
+
+
+                            <div id="singcertplaceholderlastupdate_0_DivCode">
+    <p class="m-0">
+        Last Updated 23 Dec 2020
+    </p>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- page script-->
+        <script src="../../html/Singcert/js/bundle.1.3.2.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/xss.js"></script>
+        <script type="text/javascript" src="../../html/Singcert/js/plugin.js"></script>
+        <!-- stylesheets-->
+    </form>
+</body>
+
+<!-- Mirrored from www.csa.gov.sg/singcert/alerts/al-2020-049 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Feb 2021 07:44:29 GMT -->
+</html>

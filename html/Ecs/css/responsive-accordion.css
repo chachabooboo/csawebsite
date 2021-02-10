@@ -1,0 +1,96 @@
+/*	Responsive Accordion v1.3, Copyright 2014, Joe Mottershaw, https://github.com/joemottershaw/
+//	============================================================================================ */
+
+/*	Table of Contents
+//	==================================================
+//		#Reset
+//		#Themes
+
+
+/*	#Reset
+//	================================================== */
+
+	.responsive-accordion {
+		margin: 0 0 0px 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	.responsive-accordion li {
+		margin: 0 0 0px 0;
+		padding: 0;
+	}
+
+	.responsive-accordion li:last-child { margin-bottom: 0; }
+
+	.responsive-accordion li .responsive-accordion-head { cursor: pointer; }
+
+	.responsive-accordion li .responsive-accordion-head.active { border-bottom: medium none !important;  box-shadow: none !important; }
+
+
+/*	#Themes
+//	================================================== */
+
+	.responsive-accordion-default.responsive-accordion li .responsive-accordion-head {
+		/*border: 1px solid #DDD;
+		padding: 10px 30px 10px 10px;
+		background: #FFF;
+		color: #0b8593;
+		line-height: normal;
+		position: relative;*/
+		
+	border-bottom: 2px solid #96989c;
+    box-shadow: 0 2px 2px #f1f1f1;
+    clear: left;
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 10px 30px 10px 10px;
+    position: relative;
+    width: 100%;
+	}
+	.responsive-accordion-head{font:20px HelveticaNeue-Bold;margin:auto 0px; padding:15px 90px 11px 42px !important;text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);color:#000;}
+
+	.responsive-accordion-default.responsive-accordion li .responsive-accordion-head i {
+		position: absolute;
+		top: 12px;
+		right:40px;
+	}
+
+	.responsive-accordion-default.responsive-accordion li .responsive-accordion-panel {
+		/*border: 1px solid #DDD;*/
+		border-bottom: 2px solid #96989c;
+		 box-shadow: 0 2px 2px #f1f1f1;
+		padding: 10px 40px 0px 40px;
+		/*background: #FFF;*/
+	}
+	.responsive-accordion-default.responsive-accordion li .responsive-accordion-panel:after { content:""; display:block; overflow:hidden; clear:both; }
+	.responsive-accordion-panel p {   color: #000;
+    font: 16px/24px HelveticaNeue-Bold;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6); margin-bottom:20px; }
+	.responsive-accordion-panel p a { text-decoration:none; }
+	.responsive-accordion-panel p a:hover { color:#333; }
+	.responsive-accordion-panel ol, .responsive-accordion-panel ul { margin:0 0 10px 40px; color: #000; font: 16px/24px HelveticaNeue-Bold; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6); }
+	.responsive-accordion-panel ol li, .responsive-accordion-panel ul li { padding-bottom:10px; }
+	.responsive-accordion-panel ul span { display:block; text-decoration:underline; font-size:18px; margin-bottom:5px; color:#d2232a; }
+	.responsive-accordion h2 { font:20px HelveticaNeue-Bold; color:#d2232a; padding:20px 20px 0px 41px; text-shadow:1px 1px 0 rgba(255, 255, 255, 0.6); text-transform:uppercase; }
+	.responsive-accordion a {color:#d2232a; }
+	
+@media (max-width:768px) {
+	.responsive-accordion-head, .responsive-accordion h2 { font-size:30px; }
+	.responsive-accordion-panel p, .responsive-accordion-panel ol, .responsive-accordion-panel ul, .responsive-accordion-panel ul span { font-size:25px; line-height:35px; }
+}
+
+@media (max-width:640px) {
+	.responsive-accordion-head, .responsive-accordion h2 { font-size:20px; }
+	.responsive-accordion-panel p, .responsive-accordion-panel ol, .responsive-accordion-panel ul, .responsive-accordion-panel ul span { font-size:16px; line-height:24px; }
+	.responsive-accordion-panel p { margin-bottom:10px; }
+	.responsive-accordion-default.responsive-accordion li .responsive-accordion-head i { top:16px; }
+}
+
+@media (max-width:480px) {
+	.responsive-accordion-head { padding:15px 60px 11px 22px !important; }
+	.responsive-accordion-default.responsive-accordion li .responsive-accordion-head i { right:30px; }
+	.responsive-accordion-default.responsive-accordion li .responsive-accordion-panel { padding:10px 25px 0 25px; }
+	.responsive-accordion h2 { padding-left:20px; }
+}
